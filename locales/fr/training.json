@@ -1,0 +1,123 @@
+{
+    "meta": {
+        "title": "Formation Executive | Krinch & Partners - Développement du Leadership",
+        "description": "Découvrez nos programmes de formation sur mesure pour cadres et dirigeants. Une approche pragmatique, sur mesure et impactante pour transformer vos organisations."
+    },
+    "hero": {
+        "title": "La Formation, Levier Stratégique",
+        "philosophy_title": "Notre Philosophie : Les 3 P",
+        "pillars": [
+            {
+                "title": "Pragmatique",
+                "desc": "Des solutions ancrées dans le réel, immédiatement applicables sur le terrain."
+            },
+            {
+                "title": "Sur Mesure",
+                "desc": "Une ingénierie pédagogique adaptée à vos enjeux et à votre culture."
+            },
+            {
+                "title": "Impactante",
+                "desc": "Une obsession de la mesure du transfert de compétences et de la performance."
+            }
+        ]
+    },
+    "catalogue": {
+        "title": "Domaines d'Intervention",
+        "domains": {
+            "rh": {
+                "title": "Excellence RH",
+                "modules": [
+                    "HR Analytics & Data",
+                    "Audit des processus RH",
+                    "Marketing Employeur",
+                    "Ingénierie Salariale"
+                ]
+            },
+            "management": {
+                "title": "Leadership & Management",
+                "modules": [
+                    "Posture du manager leader",
+                    "Intelligence émotionnelle",
+                    "Gestion des conflits",
+                    "Délégation stratégique"
+                ]
+            },
+            "transformation": {
+                "title": "Projets & Transformation",
+                "modules": [
+                    "Pilotage du changement",
+                    "Agilité organisationnelle",
+                    "Design Thinking",
+                    "Gestion de projets complexes"
+                ]
+            },
+            "digital": {
+                "title": "Digital & IA",
+                "badge": "Premium",
+                "modules": [
+                    "Acculturation au digital & IA RH",
+                    "Optimisation SIRH",
+                    "IA générative pour managers",
+                    "Cybersécurité RH"
+                ]
+            }
+        }
+    },
+    "formats": {
+        "title": "Formats & Publics",
+        "list": [
+            {
+                "label": "Présentiel",
+                "desc": "Immersion totale"
+            },
+            {
+                "label": "Distance",
+                "desc": "Flexibilité maximale"
+            },
+            {
+                "label": "Ateliers",
+                "desc": "Co-construction"
+            },
+            {
+                "label": "Séminaires",
+                "desc": "Cohésion & Vision"
+            }
+        ],
+        "publics": {
+            "title": "À qui s'adresse nos formations ?",
+            "items": [
+                "Directions Générales",
+                "Équipes RH",
+                "Managers Seniors",
+                "Cadres Potentiels"
+            ]
+        }
+    },
+    "quality": {
+        "title": "Engagement Qualité",
+        "subtitle": "Un processus certifié pour une excellence académique durable.",
+        "timeline": [
+            {
+                "label": "Diagnostic",
+                "desc": "Identification des besoins"
+            },
+            {
+                "label": "Objectifs",
+                "desc": "Cadrage pédagogique"
+            },
+            {
+                "label": "Évaluation",
+                "desc": "Mesure des acquis"
+            },
+            {
+                "label": "Suivi",
+                "desc": "Accompagnement post-formation"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Construisons votre programme sur mesure",
+        "button": "Contactez nos experts",
+        "brochure": "Télécharger la brochure PDF"
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "meta": {
+        "title": "Mentions Légales | Krinch & Partners",
+        "description": "Information juridique et transparence concernant le site de Krinch & Partners."
+    },
+    "legal_page": {
+        "title": "Mentions Légales",
+        "summary": {
+            "title": "Sommaire",
+            "items": [
+                {
+                    "id": "publisher",
+                    "label": "1. Éditeur du site"
+                },
+                {
+                    "id": "hosting",
+                    "label": "2. Hébergement"
+                },
+                {
+                    "id": "intellectual_property",
+                    "label": "3. Propriété Intellectuelle"
+                },
+                {
+                    "id": "data_protection",
+                    "label": "4. Protection des données (RGPD)"
+                },
+                {
+                    "id": "liability",
+                    "label": "5. Responsabilité"
+                },
+                {
+                    "id": "contact",
+                    "label": "6. Contact"
+                }
+            ]
+        },
+        "sections": {
+            "publisher": {
+                "title": "1. Éditeur du site",
+                "content": "Le présent site est édité par Krinch & Partners.\n\nStatut juridique : [À PRÉCISER - SARL/SA]\nSiège social : Douala / Yaoundé, Cameroun.\nNuméro d'immatriculation : [À PRÉCISER]\nDirecteur de la publication : Direction de Krinch & Partners."
+            },
+            "hosting": {
+                "title": "2. Hébergement",
+                "content": "Le site est hébergé par [À PRÉCISER].\nAdresse : [À PRÉCISER]\nSite web : [À PRÉCISER]"
+            },
+            "intellectual_property": {
+                "title": "3. Propriété Intellectuelle",
+                "content": "L'ensemble de ce site relève de la législation internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques. La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit est formellement interdite sauf autorisation expresse du directeur de la publication."
+            },
+            "data_protection": {
+                "title": "4. Protection des données (RGPD)",
+                "content": "Conformément aux réglementations sur la protection des données, Krinch & Partners s'engage à préserver la confidentialité des informations fournies en ligne par l'internaute. Les données collectées via nos formulaires sont destinées exclusivement à un usage interne et ne seront en aucun cas cédées à des tiers."
+            },
+            "liability": {
+                "title": "5. Responsabilité",
+                "content": "Krinch & Partners s'efforce d'assurer au mieux de ses possibilités, l'exactitude et la mise à jour des informations diffusées sur ce site, dont elle se réserve le droit de corriger, à tout moment et sans préavis, le contenu."
+            },
+            "contact": {
+                "title": "6. Contact",
+                "content": "Pour toute question concernant ces mentions légales, vous pouvez nous contacter à l'adresse suivante : contact@krinch-partners.com"
+            }
+        }
+    }
+}

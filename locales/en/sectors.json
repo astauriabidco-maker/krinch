@@ -1,0 +1,106 @@
+{
+    "meta": {
+        "title": "Sectors & Expertise | Krinch & Partners - SME & Africa Expertise",
+        "description": "Locally anchored industry expertise. We support SMEs, Large Corporations, and Institutions with international standards applied to African realities."
+    },
+    "sectors_page": {
+        "hero": {
+            "title": "Sectors & Expertise",
+            "subtitle": "Serving the growth of local and continental economic fabric.",
+            "sme_badge": "Core of our expertise: SMEs",
+            "intro": "We understand that 90% of the Cameroonian economic fabric rests on you. Our mission is to give you the tools of major groups."
+        },
+        "segments": {
+            "pme": {
+                "title": "SMEs & Growth Companies",
+                "points": [
+                    "Professionalization of HR management",
+                    "Implementation of agile processes",
+                    "Strategic talent recruitment",
+                    "Structuring corporate culture"
+                ],
+                "highlight": "👉 Our Approach",
+                "result": "A secured scaling and structuring worthy of international standards."
+            },
+            "ge": {
+                "title": "Large Corporations",
+                "points": [
+                    "Digital Transformation & HRIS",
+                    "Compliance Audit & Governance",
+                    "Strategic Workforce Planning (SWP)",
+                    "Recruitment Process Outsourcing (RPO)"
+                ],
+                "highlight": "👉 Result",
+                "result": "An optimized, high-performance HR function aligned with global challenges."
+            },
+            "institutions": {
+                "title": "Public Institutions",
+                "points": [
+                    "Administration Modernization",
+                    "Organizational Performance Audit",
+                    "Structural Change Management",
+                    "Management Capacity Building"
+                ],
+                "highlight": "👉 Impact",
+                "result": "A modernized public service and teams committed to development."
+            },
+            "ong": {
+                "title": "NGOs & International",
+                "points": [
+                    "Compliance with international standards",
+                    "National & Expat staff management",
+                    "Complex compensation policies",
+                    "HR risk audit"
+                ],
+                "highlight": "👉 Guarantee",
+                "result": "Rigorous, transparent HR management compliant with donor requirements."
+            }
+        },
+        "industries": {
+            "title": "Active Sectors",
+            "list": [
+                {
+                    "id": "finance",
+                    "title": "Banking & Insurance"
+                },
+                {
+                    "id": "energy",
+                    "title": "Industry & Energy"
+                },
+                {
+                    "id": "telecom",
+                    "title": "Telecoms"
+                },
+                {
+                    "id": "public",
+                    "title": "Public Sector & NGOs"
+                },
+                {
+                    "id": "multisector",
+                    "title": "Multi-sector SMEs"
+                }
+            ]
+        },
+        "engagement": {
+            "title": "Our Engagement",
+            "pillars": [
+                {
+                    "title": "Bespoke",
+                    "desc": "Solutions adapted to each context."
+                },
+                {
+                    "title": "Adapted",
+                    "desc": "Respect for local specificities."
+                },
+                {
+                    "title": "Efficiency",
+                    "desc": "Focus on operational impact."
+                },
+                {
+                    "title": "International Standards",
+                    "desc": "Excellence and global rigor."
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "meta": {
+        "title": "À Propos | Krinch & Partners - Expertise RH en Afrique",
+        "description": "Découvrez notre mission, notre vision et nos valeurs. Un cabinet panafricain dédié à l'excellence du conseil RH et à la transformation des organisations."
+    },
+    "who_we_are": {
+        "title": "Qui sommes-nous ?",
+        "content": "Krinch & Partners est un cabinet de conseil en ressources humaines et transformation organisationnelle, né d'une volonté de concilier les standards internationaux d'excellence avec une compréhension intime des écosystèmes économiques africains. Basés au Cameroun, nous accompagnons les entreprises et institutions dans leurs défis les plus complexes."
+    },
+    "vision": {
+        "title": "Notre Vision",
+        "subtitle": "Nous aspirons à être le partenaire de référence pour bâtir des organisations africaines performantes, résilientes et tournées vers l'avenir.",
+        "governance": {
+            "title": "Gouvernance",
+            "desc": "Instaurer des structures décisionnelles transparentes et efficaces."
+        },
+        "engagement": {
+            "title": "Engagement",
+            "desc": "Mobiliser le capital humain autour d'objectifs partagés."
+        },
+        "alignment": {
+            "title": "Alignement",
+            "desc": "Assurer la cohérence entre stratégie business et pratiques RH."
+        }
+    },
+    "approach": {
+        "title": "Notre Approche",
+        "subtitle": "Une méthodologie rigoureuse en quatre étapes pour garantir un impact mesurable.",
+        "steps": [
+            {
+                "title": "Diagnostic",
+                "desc": "Analyse approfondie de votre situation actuelle et identification des leviers de performance."
+            },
+            {
+                "title": "Solution",
+                "desc": "Cocréation de stratégies sur mesure adaptées à votre contexte et à vos ambitions."
+            },
+            {
+                "title": "Accompagnement",
+                "desc": "Mise en œuvre opérationnelle aux côtés de vos équipes pour assurer le transfert de compétences."
+            },
+            {
+                "title": "Mesure",
+                "desc": "Évaluation rigoureuse des résultats et ajustements pour une pérennité maximale."
+            }
+        ]
+    },
+    "values": {
+        "title": "Nos Valeurs",
+        "items": [
+            {
+                "title": "Excellence",
+                "desc": "Le dépassement constant des attentes et la quête de la perfection technique."
+            },
+            {
+                "title": "Intégrité",
+                "desc": "Une éthique professionnelle inébranlable et une transparence totale envers nos partenaires."
+            },
+            {
+                "title": "Impact",
+                "desc": "L'obsession de la valeur ajoutée réelle et de la transformation concrète du terrain."
+            },
+            {
+                "title": "Partenariat",
+                "desc": "Une relation de confiance durable, construite sur l'écoute et le succès mutuel."
+            }
+        ]
+    },
+    "experts": {
+        "title": "Nos Experts",
+        "subtitle": "Une équipe de praticiens chevronnés au service de votre transformation.",
+        "items": [
+            {
+                "name": "Jean-Paul Ewane",
+                "role": "Associé Gérant - Stratégie RH",
+                "bio": "Plus de 20 ans d'expérience dans le conseil de direction et la transformation des organisations en Afrique."
+            },
+            {
+                "name": "Marie-Thérèse Ndongo",
+                "role": "Directrice Digital RH & IA",
+                "bio": "Experte en SIRH et conduite du changement technologique, spécialisée dans l'intégration de l'IA."
+            },
+            {
+                "name": "Marc-Arthur Kamga",
+                "role": "Sénior Consultant - Talent Management",
+                "bio": "Spécialiste du recrutement exécutif et du développement du leadership."
+            }
+        ]
+    }
+}

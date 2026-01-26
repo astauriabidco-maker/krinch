@@ -1,0 +1,141 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À Propos",
+        "services": "Nos Services",
+        "insights": "Insights",
+        "careers": "Carrières",
+        "contact": "Contact",
+        "expertise": "Expertise"
+    },
+    "buttons": {
+        "expert": "Parler à un expert",
+        "contact": "Contactez-nous",
+        "apply": "Postuler maintenant",
+        "discover": "Découvrir nos solutions"
+    },
+    "hero": {
+        "title": "Cabinet de Conseil RH & Transformation au Cameroun",
+        "subtitle": "Bâtir l'avenir des organisations en Afrique avec excellence, sobriété et crédibilité.",
+        "cta": "Contactez nos experts",
+        "secondary_cta": "Consultant RH Douala",
+        "promise": "Une ambition internationale, un ancrage local fort au Cameroun."
+    },
+    "promise": {
+        "title": "Audit & Accompagnement RH Cameroun",
+        "subtitle": "Nous accompagnons la transformation durable des organisations à travers une approche rigoureuse, pragmatique et adaptée au marché africain.",
+        "combination_title": "Nos piliers d'excellence :",
+        "items": [
+            "Expertise stratégique RH de haut niveau",
+            "Ancrage profond dans les réalités de Douala et Yaoundé",
+            "Sobriété opérationnelle et expertise IA RH Afrique",
+            "Engagement pour une performance durable"
+        ]
+    },
+    "why_us": {
+        "title": "Pourquoi Krinch & Partners ?",
+        "items": [
+            {
+                "title": "Expertise Locale",
+                "desc": "Une compréhension fine des écosystèmes économiques africains (Cameroun, zone CEMAC, Afrique de l'Ouest)."
+            },
+            {
+                "title": "Consultants Seniors",
+                "desc": "Une équipe de praticiens chevronnés issus de cabinets de conseil internationaux et de grandes entreprises."
+            },
+            {
+                "title": "Agilité & Sur-mesure",
+                "desc": "Des solutions adaptées à votre taille et à vos enjeux spécifiques, loin des modèles standards."
+            },
+            {
+                "title": "Vision Transformationnelle",
+                "desc": "Au-delà du conseil, nous bâtissons les capacités internes nécessaires à votre autonomie future."
+            }
+        ]
+    },
+    "sectors_preview": {
+        "title": "Secteurs Accompagnés",
+        "items": [
+            "Banque & Finance",
+            "Énergie & Mines",
+            "Industrie",
+            "Secteur Public",
+            "ONG Internationales",
+            "Télécoms & Tech",
+            "PME & Startups"
+        ]
+    },
+    "final_cta": {
+        "text": "Prêt à transformer votre organisation et à libérer le potentiel de vos talents ?",
+        "button": "Contactez nos experts dès aujourd'hui"
+    },
+    "services": {
+        "title": "Expertise RH & Transformation des Organisations",
+        "subtitle": "Accompagner votre croissance au Cameroun et à l'international grâce à des solutions innovantes.",
+        "rh": {
+            "title": "Conseil RH Stratégique",
+            "desc": "Optimisation du capital humain, gestion des talents et audit RH Cameroun."
+        },
+        "digital": {
+            "title": "SIRH & Digital RH Afrique",
+            "desc": "Accélération de votre maturité numérique et digitalisation des processus RH."
+        },
+        "ia": {
+            "title": "IA RH & Data Analytics",
+            "desc": "Exploitation de la donnée et accompagnement IA RH Afrique pour une décision éclairée."
+        },
+        "transformation": {
+            "title": "Transformation à Yaoundé & Douala",
+            "desc": "Accompagnement au changement et restructuration stratégique des organisations."
+        },
+        "formation": {
+            "title": "Formation & Coaching Executive",
+            "desc": "Développement des compétences et leadership pour les cadres dirigeants en zone CEMAC."
+        },
+        "recrutement": {
+            "title": "Talent Acquisition & Chasse de Tête",
+            "desc": "Cabinet de recrutement executive pour attirer les meilleurs experts au Cameroun."
+        },
+        "discover": "Voir toutes nos solutions de conseil"
+    },
+    "footer": {
+        "legal": "Mentions Légales",
+        "privacy": "Politique de Confidentialité",
+        "rights": "© 2026 Krinch & Partners. Tous droits réservés."
+    },
+    "testimonials": {
+        "badge": "Preuve Sociale",
+        "title": "Ce que nos clients disent de nous",
+        "items": [
+            {
+                "quote": "L'accompagnement de Krinch & Partners a été décisif dans la digitalisation de nos processus RH. Une expertise locale aux standards internationaux.",
+                "author": "Directeur Capital Humain",
+                "company": "Secteur Bancaire (CEMAC)"
+            },
+            {
+                "quote": "Un partenaire pragmatique qui comprend réellement les enjeux des PME en croissance au Cameroun.",
+                "author": "Fondateur",
+                "company": "Entreprise Industrielle"
+            },
+            {
+                "quote": "Leur maîtrise de l'IA RH nous a permis d'optimiser notre recrutement de façon spectaculaire.",
+                "author": "DRH",
+                "company": "Groupe Télécom"
+            }
+        ]
+    },
+    "partners": [
+        "BANQUE",
+        "INDUSTRIE",
+        "ÉNERGIE",
+        "ASSURANCE",
+        "TÉLÉCOMS",
+        "ONG"
+    ],
+    "newsletter": {
+        "title": "Rejoindre le cercle",
+        "description": "Recevez nos analyses exclusives sur la transformation RH en Afrique.",
+        "placeholder": "Votre adresse email",
+        "button": "S'abonner"
+    }
+}

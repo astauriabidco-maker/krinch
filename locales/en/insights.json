@@ -1,0 +1,50 @@
+{
+    "meta": {
+        "title": "Insights & Analyses | Krinch & Partners",
+        "description": "Find our latest analyses and reflections on HR transformation, AI, and leadership in Africa."
+    },
+    "filter": {
+        "all": "All",
+        "digital": "Digital Transformation",
+        "ia": "HR AI & Data",
+        "strategy": "Strategy & Leadership"
+    },
+    "articles": [
+        {
+            "slug": "ia-rh-douala-enjeux-2026",
+            "category": "ia",
+            "categoryLabel": "HR AI & Data",
+            "image": "/images/insights/ia-rh.png",
+            "title": "AI in Douala: The challenges of predictive recruitment in 2026",
+            "excerpt": "How companies in coastal Cameroon are adapting to new artificial intelligence tools to identify talent.",
+            "date": "Jan 24, 2026",
+            "readTime": "5 min read",
+            "content": "Integrating AI into recruitment processes is no longer science fiction for Cameroonian companies..."
+        },
+        {
+            "slug": "transformation-digitale-rh-afrique",
+            "category": "digital",
+            "categoryLabel": "Digital Transformation",
+            "image": "/images/insights/digital.png",
+            "title": "HRIS: The keys to a successful transition for African SMEs",
+            "excerpt": "Moving to all-digital in HR requires a cultural approach before it is a technological one.",
+            "date": "Jan 18, 2026",
+            "readTime": "7 min read",
+            "content": "The digitalization of human resources is now an imperative for any organization wishing to remain competitive..."
+        },
+        {
+            "slug": "leadership-crise-croissance",
+            "category": "strategy",
+            "categoryLabel": "Strategy & Leadership",
+            "image": "/images/insights/leadership.png",
+            "title": "Leadership tested by rapid growth",
+            "excerpt": "How to maintain corporate culture during a phase of accelerated expansion in the CEMAC zone.",
+            "date": "Jan 10, 2026",
+            "readTime": "6 min read",
+            "content": "Managing rapid growth is a challenge that tests the strength of leadership structures and team resilience..."
+        }
+    ],
+    "cta_article": "Is this topic relevant to you?",
+    "cta_button": "Speak to an expert",
+    "newsletter_success": "Thank you! You have joined Krinch & Partners' thought leadership circle."
+}

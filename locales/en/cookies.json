@@ -1,0 +1,33 @@
+{
+    "cookies": {
+        "banner": {
+            "title": "Cookie Management",
+            "message": "We use cookies to optimize your experience, analyze our traffic and offer you tailored content. Some are necessary for the proper functioning of the site.",
+            "accept": "Accept all",
+            "decline": "Decline all",
+            "settings": "Settings"
+        },
+        "modal": {
+            "title": "Cookie Settings",
+            "description": "You can choose which types of cookies you wish to allow. Your preferences will be kept for 6 months.",
+            "save": "Save my preferences",
+            "accept_all": "Accept all",
+            "decline_all": "Decline all",
+            "categories": {
+                "necessary": {
+                    "title": "Strictly Necessary",
+                    "description": "These cookies are essential for the site to function and cannot be disabled."
+                },
+                "analytics": {
+                    "title": "Audience Measurement",
+                    "description": "These cookies allow us to understand how you use the site in order to improve its ergonomics."
+                },
+                "functional": {
+                    "title": "Advanced Features",
+                    "description": "These cookies enable advanced features such as video playback or interactive maps."
+                }
+            }
+        },
+        "footer_link": "Cookie settings"
+    }
+}

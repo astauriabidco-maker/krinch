@@ -1,0 +1,64 @@
+{
+    "meta": {
+        "title": "Legal Notice | Krinch & Partners",
+        "description": "Legal information and transparency regarding the Krinch & Partners website."
+    },
+    "legal_page": {
+        "title": "Legal Notice",
+        "summary": {
+            "title": "Summary",
+            "items": [
+                {
+                    "id": "publisher",
+                    "label": "1. Site Publisher"
+                },
+                {
+                    "id": "hosting",
+                    "label": "2. Hosting"
+                },
+                {
+                    "id": "intellectual_property",
+                    "label": "3. Intellectual Property"
+                },
+                {
+                    "id": "data_protection",
+                    "label": "4. Data Protection (GDPR)"
+                },
+                {
+                    "id": "liability",
+                    "label": "5. Liability"
+                },
+                {
+                    "id": "contact",
+                    "label": "6. Contact"
+                }
+            ]
+        },
+        "sections": {
+            "publisher": {
+                "title": "1. Site Publisher",
+                "content": "This website is published by Krinch & Partners.\n\nLegal status: [TO BE SPECIFIED]\nHead office: Douala / Yaoundé, Cameroon.\nRegistration number: [TO BE SPECIFIED]\nPublication Director: Krinch & Partners Management."
+            },
+            "hosting": {
+                "title": "2. Hosting",
+                "content": "The site is hosted by [TO BE SPECIFIED].\nAddress: [TO BE SPECIFIED]\nWebsite: [TO BE SPECIFIED]"
+            },
+            "intellectual_property": {
+                "title": "3. Intellectual Property",
+                "content": "The entire site is subject to international legislation on copyright and intellectual property. All reproduction rights are reserved, including for downloadable documents and iconographic and photographic representations. Reproduction of all or part of this site on any electronic medium whatsoever is strictly prohibited unless expressly authorized by the publication director."
+            },
+            "data_protection": {
+                "title": "4. Data Protection (GDPR)",
+                "content": "In accordance with data protection regulations, Krinch & Partners is committed to preserving the confidentiality of information provided online by the user. The data collected via our forms are intended exclusively for internal use and will under no circumstances be transferred to third parties."
+            },
+            "liability": {
+                "title": "5. Liability",
+                "content": "Krinch & Partners endeavors to ensure to the best of its ability, the accuracy and updating of the information broadcast on this site, which it reserves the right to correct, at any time and without notice, the content."
+            },
+            "contact": {
+                "title": "6. Contact",
+                "content": "For any question regarding these legal notices, you can contact us at the following address: contact@krinch-partners.com"
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "title": "Is Your Organization AI-Ready?",
+    "subtitle": "Assess your digital maturity and discover your potential for artificial intelligence integration in 2 minutes.",
+    "start": "Start Diagnostic",
+    "next": "Next",
+    "finish": "See My Score",
+    "progress": "Progress",
+    "questions": [
+        {
+            "id": 1,
+            "text": "Is your HR data centralized and digitized?",
+            "options": [
+                {
+                    "label": "Yes, fully centralized",
+                    "points": 10
+                },
+                {
+                    "label": "Partially (using multiple tools)",
+                    "points": 5
+                },
+                {
+                    "label": "No, mostly Excel/Paper based",
+                    "points": 0
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "text": "Are your recruitment processes automated?",
+            "options": [
+                {
+                    "label": "Fully (ATS + AI Matching)",
+                    "points": 10
+                },
+                {
+                    "label": "Somewhat (Basic management tool)",
+                    "points": 5
+                },
+                {
+                    "label": "Not at all",
+                    "points": 0
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "text": "Are your managers aware of AI challenges and opportunities?",
+            "options": [
+                {
+                    "label": "Yes, they are trained",
+                    "points": 10
+                },
+                {
+                    "label": "In the process of acculturation",
+                    "points": 5
+                },
+                {
+                    "label": "No, not yet",
+                    "points": 0
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "text": "Do you use predictive analytics (e.g., turnover prediction)?",
+            "options": [
+                {
+                    "label": "Regularly",
+                    "points": 10
+                },
+                {
+                    "label": "We are starting to explore",
+                    "points": 5
+                },
+                {
+                    "label": "No",
+                    "points": 0
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "text": "Is there an AI roadmap in your strategy?",
+            "options": [
+                {
+                    "label": "Yes, clear and budgeted",
+                    "points": 10
+                },
+                {
+                    "label": "Currently under consideration",
+                    "points": 5
+                },
+                {
+                    "label": "No",
+                    "points": 0
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "text": "Have you defined ethical rules for AI usage?",
+            "options": [
+                {
+                    "label": "Yes, charter established",
+                    "points": 10
+                },
+                {
+                    "label": "Discussed but not finalized",
+                    "points": 5
+                },
+                {
+                    "label": "No",
+                    "points": 0
+                }
+            ]
+        }
+    ],
+    "results": {
+        "title": "Your Score: {score}%",
+        "description": "Based on your answers, here is your AI maturity profile:",
+        "discovery": {
+            "label": "Discovery Phase",
+            "text": "Your organization is beginning its digital journey. Data structuring work is necessary before integrating AI."
+        },
+        "transition": {
+            "label": "In Transition",
+            "text": "You have solid foundations. You are ready to implement specific AI use cases to boost productivity."
+        },
+        "pioneer": {
+            "label": "AI Pioneer",
+            "text": "Your maturity is exemplary. AI can become a major and transformational competitive advantage for you."
+        },
+        "cta": "Receive My Detailed Report",
+        "modal": {
+            "title": "Detailed Diagnostic",
+            "subtitle": "Leave us your details to receive your personalized action plan by email.",
+            "name": "Full Name",
+            "email": "Professional Email Address",
+            "company": "Company",
+            "submit": "Send Report",
+            "success": "Thank you! Your report is on its way."
+        }
+    }
+}

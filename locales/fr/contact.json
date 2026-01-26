@@ -1,0 +1,49 @@
+{
+    "meta": {
+        "title": "Contact | Krinch & Partners - Expertise RH en Afrique",
+        "description": "Contactez nos experts pour vos besoins en Conseil RH, SIRH, IA et Formation. Une approche sur mesure pour transformer votre organisation."
+    },
+    "contact_page": {
+        "title": "Contactez un Expert",
+        "subtitle": "Parlons de vos enjeux et construisons ensemble vos solutions de demain.",
+        "info": {
+            "title": "Nos Coordonnées",
+            "email_label": "Email",
+            "phone_label": "Téléphone",
+            "address_label": "Nos Bureaux",
+            "social_label": "Suivez-nous",
+            "address_content": "Douala & Yaoundé, Cameroun"
+        },
+        "form": {
+            "title": "Votre Projet",
+            "fields": {
+                "full_name": "Nom complet",
+                "role": "Fonction",
+                "org": "Nom de l'organisation",
+                "email": "Email professionnel",
+                "phone": "Téléphone",
+                "subject": "Objet de votre demande",
+                "size": "Taille de l'entreprise",
+                "message": "Message",
+                "opt_in": "Je souhaite recevoir les 'Insights RH' de Krinch & Partners par email.",
+                "placeholder_message": "Décrivez-nous brièvement votre projet ou votre problématique..."
+            },
+            "subjects": [
+                "Conseil Stratégique",
+                "SIRH & Digital",
+                "Recrutement & Marque Employeur",
+                "Transformation",
+                "IA RH",
+                "Formation"
+            ],
+            "sizes": [
+                "PME (< 50 pers)",
+                "Entreprise en croissance (50-250)",
+                "Grand Groupe / Institution (> 250)"
+            ],
+            "button": "Envoyer ma demande à un expert",
+            "privacy": "Vos données sont traitées de manière confidentielle. Réponse sous 48h.",
+            "success": "Merci pour votre confiance. Un consultant expert de Krinch & Partners reviendra vers vous sous 48 heures."
+        }
+    }
+}

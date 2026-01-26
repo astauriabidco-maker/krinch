@@ -1,0 +1,123 @@
+{
+    "meta": {
+        "title": "Executive Education | Krinch & Partners - Leadership Development",
+        "description": "Discover our tailored training programs for executives and managers. A pragmatic, bespoke, and impactful approach to transform your organizations."
+    },
+    "hero": {
+        "title": "Training as a Strategic Lever",
+        "philosophy_title": "Our Philosophy: The 3 Ps",
+        "pillars": [
+            {
+                "title": "Pragmatic",
+                "desc": "Real-world solutions, immediately applicable on the ground."
+            },
+            {
+                "title": "Proactive/Bespoke",
+                "desc": "Pedagogical engineering adapted to your challenges and culture."
+            },
+            {
+                "title": "Powerful/Impactful",
+                "desc": "Obsessed with measuring skill transfer and performance."
+            }
+        ]
+    },
+    "catalogue": {
+        "title": "Areas of Expertise",
+        "domains": {
+            "rh": {
+                "title": "HR Excellence",
+                "modules": [
+                    "HR Analytics & Data",
+                    "HR Process Audit",
+                    "Employer Branding",
+                    "Payroll Engineering"
+                ]
+            },
+            "management": {
+                "title": "Leadership & Management",
+                "modules": [
+                    "Manager-Leader Posture",
+                    "Emotional Intelligence",
+                    "Conflict Management",
+                    "Strategic Delegation"
+                ]
+            },
+            "transformation": {
+                "title": "Projects & Transformation",
+                "modules": [
+                    "Change Management",
+                    "Organizational Agility",
+                    "Design Thinking",
+                    "Complex Project Management"
+                ]
+            },
+            "digital": {
+                "title": "Digital & AI",
+                "badge": "Premium",
+                "modules": [
+                    "Digital & AI HR Literacy",
+                    "HRIS Optimization",
+                    "Generative AI for Managers",
+                    "HR Cybersecurity"
+                ]
+            }
+        }
+    },
+    "formats": {
+        "title": "Formats & Audiences",
+        "list": [
+            {
+                "label": "On-site",
+                "desc": "Full immersion"
+            },
+            {
+                "label": "Distance",
+                "desc": "Maximum flexibility"
+            },
+            {
+                "label": "Workshops",
+                "desc": "Co-construction"
+            },
+            {
+                "label": "Seminars",
+                "desc": "Cohesion & Vision"
+            }
+        ],
+        "publics": {
+            "title": "Who are our programs for?",
+            "items": [
+                "General Management",
+                "HR Teams",
+                "Senior Managers",
+                "High Potentials"
+            ]
+        }
+    },
+    "quality": {
+        "title": "Quality Commitment",
+        "subtitle": "A certified process for sustainable academic excellence.",
+        "timeline": [
+            {
+                "label": "Diagnosis",
+                "desc": "Needs identification"
+            },
+            {
+                "label": "Objectives",
+                "desc": "Pedagogical framing"
+            },
+            {
+                "label": "Evaluation",
+                "desc": "Skill assessment"
+            },
+            {
+                "label": "Follow-up",
+                "desc": "Post-training support"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Let's build your custom program",
+        "button": "Contact our experts",
+        "brochure": "Download PDF Brochure"
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "meta": {
+        "title": "Privacy Policy | Krinch & Partners",
+        "description": "How Krinch & Partners protects your personal data in accordance with GDPR and local legislation."
+    },
+    "privacy_page": {
+        "title": "Privacy Policy",
+        "badge": "Certified Data Protection",
+        "intro": "At Krinch & Partners, protecting your privacy is a top priority. This policy details how we process your personal data.",
+        "sections": [
+            {
+                "title": "1. Data Collection",
+                "content": "We only collect data strictly necessary for our services:",
+                "list": [
+                    "Identity (Name, First Name)",
+                    "Contact (Business Email, Phone Number)",
+                    "Professional (Job Title, Company)",
+                    "Navigation Data (Essential Cookies)"
+                ]
+            },
+            {
+                "title": "2. Purposes of Processing",
+                "content": "Your information is used to:",
+                "list": [
+                    "Respond to your contact requests",
+                    "Manage your applications",
+                    "Send our HR Insights (if opted-in)",
+                    "Improve your experience on our site"
+                ]
+            },
+            {
+                "title": "3. Data Retention",
+                "content": "Krinch & Partners only retains your data for the duration necessary for the purposes for which it was collected, in accordance with legal and regulatory requirements."
+            },
+            {
+                "title": "4. Information Security",
+                "content": "We implement rigorous technical and organizational measures to protect your data against unauthorized access, loss, or alteration."
+            },
+            {
+                "title": "5. Your Rights",
+                "content": "Under GDPR and local data protection laws, you have the right to access, rectify, and delete your information. To exercise these rights, contact us at:",
+                "contact_email": "contact@krinchpartners.com"
+            }
+        ],
+        "cookies_link": "Manage your cookie preferences"
+    }
+}

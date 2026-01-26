@@ -1,0 +1,99 @@
+{
+    "meta": {
+        "title": "Nos Services | Conseil RH & Transformation",
+        "description": "Découvrez nos pôles d'expertise : Stratégie RH, Digitalisation, Transformation organisationnelle et IA pour les entreprises et institutions en Afrique."
+    },
+    "services_page": {
+        "hero": {
+            "title": "Nos Services",
+            "intro": "Nous accompagnons la transformation durable de votre organisation en intervenant sur l'ensemble de la chaîne de valeur RH."
+        },
+        "value_cycle": {
+            "title": "Le Cycle de la Valeur RH",
+            "steps": [
+                "Audit",
+                "Stratégie",
+                "Implémentation",
+                "Performance"
+            ]
+        },
+        "labels": {
+            "result": "👉 Résultat",
+            "innovation": "Impact Innovation"
+        },
+        "pillars": {
+            "strategy": {
+                "title": "Conseil RH & Stratégie",
+                "description": "Aligner votre capital humain avec vos objectifs business.",
+                "items": [
+                    "Audit et diagnostic RH complet",
+                    "Gouvernance et structuration de la fonction RH",
+                    "Gestion prévisionnelle des emplois (GPEC)",
+                    "Définition de politiques de rémunération"
+                ],
+                "result": "Une organisation structurée et une fonction RH alignée sur la stratégie globale."
+            },
+            "digital": {
+                "title": "Digitalisation & SIRH",
+                "description": "Moderniser vos processus pour plus d'agilité.",
+                "items": [
+                    "Aide au choix de solutions logicielles",
+                    "Assistance à la maîtrise d'ouvrage (AMOA)",
+                    "Optimisation et digitalisation des processus",
+                    "Sécurisation des données RH"
+                ],
+                "result": "Des processus automatisés et une productivité RH accrue de 30%."
+            },
+            "transformation": {
+                "title": "Transformation & Changement",
+                "description": "Piloter l'évolution de votre culture d'entreprise.",
+                "items": [
+                    "Accompagnement RH des Fusions-Acquisitions",
+                    "Refonte de la culture d'entreprise",
+                    "Évolution des modèles managériaux",
+                    "Mise en place du travail hybride"
+                ],
+                "result": "Une culture d'entreprise résiliente et une adhésion forte au changement."
+            },
+            "ai_data": {
+                "title": "IA RH & Data Analytics",
+                "description": "Décider avec précision grâce à la donnée.",
+                "badge": "Innovation",
+                "items": [
+                    "Déploiement de tableaux de bord RH",
+                    "Intégration de l'IA générative pour les RH",
+                    "Analyses prédictives du turnover",
+                    "Data-Driven Recruiting"
+                ],
+                "result": "Un pilotage RH prédictif et des décisions basées sur des faits."
+            },
+            "training": {
+                "title": "Formation & Développement",
+                "description": "Accroître les compétences de vos leaders.",
+                "items": [
+                    "Programmes de Leadership & Management",
+                    "Développement des Soft Skills",
+                    "Acculturation au digital et à l'IA",
+                    "Coaching de dirigeants"
+                ],
+                "result": "Un management renforcé et des équipes prêtes pour les défis futurs."
+            },
+            "recruitment": {
+                "title": "Talent Acquisition",
+                "description": "Attirer les meilleurs profils pour votre croissance.",
+                "items": [
+                    "Chasse de tête de profils exécutifs",
+                    "Développement de la Marque Employeur",
+                    "Optimisation de l'expérience candidat",
+                    "Externalisation du recrutement (RPO)"
+                ],
+                "result": "Une attractivité renforcée et l'intégration de talents stratégiques."
+            }
+        },
+        "engagement": {
+            "title": "Notre Engagement",
+            "text": "Au-delà du conseil, nous nous engageons à bâtir des solutions concrètes, pérennes et à fort impact pour votre développement.",
+            "cta": "Contactez-nous"
+        }
+    }
+}

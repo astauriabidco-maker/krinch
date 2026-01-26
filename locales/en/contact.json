@@ -1,0 +1,49 @@
+{
+    "meta": {
+        "title": "Contact | Krinch & Partners - HR Expertise in Africa",
+        "description": "Contact our experts for your HR Consulting, HRIS, AI, and Training needs. A bespoke approach to transform your organization."
+    },
+    "contact_page": {
+        "title": "Contact an Expert",
+        "subtitle": "Let's talk about your challenges and build your future solutions together.",
+        "info": {
+            "title": "Our Details",
+            "email_label": "Email",
+            "phone_label": "Phone",
+            "address_label": "Our Offices",
+            "social_label": "Follow us",
+            "address_content": "Douala & Yaoundé, Cameroon"
+        },
+        "form": {
+            "title": "Your Project",
+            "fields": {
+                "full_name": "Full Name",
+                "role": "Position / Role",
+                "org": "Organization Name",
+                "email": "Business Email",
+                "phone": "Phone Number",
+                "subject": "Reason for your request",
+                "size": "Company Size",
+                "message": "Message",
+                "opt_in": "I wish to receive 'HR Insights' from Krinch & Partners by email.",
+                "placeholder_message": "Briefly describe your project or challenge..."
+            },
+            "subjects": [
+                "Strategic Consulting",
+                "HRIS & Digital",
+                "Recruitment & Employer Brand",
+                "Transformation",
+                "HR AI",
+                "Training"
+            ],
+            "sizes": [
+                "SME (< 50 pers)",
+                "Growing Company (50-250)",
+                "Large Group / Institution (> 250)"
+            ],
+            "button": "Submit my request to an expert",
+            "privacy": "Your data is treated confidentially. Response within 48h.",
+            "success": "Thank you for your trust. An expert consultant from Krinch & Partners will get back to you within 48 hours."
+        }
+    }
+}

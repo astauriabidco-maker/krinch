@@ -1,0 +1,47 @@
+{
+    "meta": {
+        "title": "Politique de Confidentialité | Krinch & Partners",
+        "description": "Comment Krinch & Partners protège vos données personnelles conformément au RGPD et à la législation locale."
+    },
+    "privacy_page": {
+        "title": "Politique de Confidentialité",
+        "badge": "Protection des données certifiée",
+        "intro": "Chez Krinch & Partners, la protection de votre vie privée est une priorité absolue. Cette politique détaille comment nous traitons vos données personnelles.",
+        "sections": [
+            {
+                "title": "1. Collecte des données",
+                "content": "Nous collectons uniquement les données strictement nécessaires à nos services :",
+                "list": [
+                    "Identité (Nom, Prénom)",
+                    "Contact (Email professionnel, Téléphone)",
+                    "Professionnel (Fonction, Entreprise)",
+                    "Données de navigation (Cookies essentiels)"
+                ]
+            },
+            {
+                "title": "2. Finalités du traitement",
+                "content": "Vos informations sont utilisées pour :",
+                "list": [
+                    "Répondre à vos demandes de contact",
+                    "Gérer vos candidatures",
+                    "Envoyer nos Insights RH (si opt-in)",
+                    "Améliorer votre expérience sur notre site"
+                ]
+            },
+            {
+                "title": "3. Conservation des données",
+                "content": "Krinch & Partners ne conserve vos données que pour la durée nécessaire aux finalités pour lesquelles elles ont été collectées, conformément aux exigences légales et réglementaires."
+            },
+            {
+                "title": "4. Sécurité des informations",
+                "content": "Nous mettons en œuvre des mesures techniques et organisationnelles rigoureuses pour protéger vos données contre tout accès non autorisé, perte ou altération."
+            },
+            {
+                "title": "5. Vos droits",
+                "content": "En vertu du RGPD et des lois locales sur la protection des données, vous disposez d'un droit d'accès, de rectification et de suppression de vos informations. Pour exercer ces droits, contactez-nous à :",
+                "contact_email": "contact@krinchpartners.com"
+            }
+        ],
+        "cookies_link": "Gérer vos préférences de cookies"
+    }
+}

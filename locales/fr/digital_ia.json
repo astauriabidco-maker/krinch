@@ -1,0 +1,93 @@
+{
+    "meta": {
+        "title": "Digital & IA RH | Krinch & Partners - Innovation RH en Afrique",
+        "description": "Transformez votre fonction RH avec les technologies de demain. People Analytics, IA générative et SIRH pour une performance accrue."
+    },
+    "hero": {
+        "title": "Digital & IA RH",
+        "subtitle": "L'innovation technologique au service de l'excellence humaine."
+    },
+    "vision": {
+        "title": "Le digital n'est pas une fin en soi",
+        "pillars": [
+            {
+                "title": "Identifier",
+                "desc": "Repérer les technologies RH réellement créatrices de valeur pour votre contexte."
+            },
+            {
+                "title": "Sécuriser",
+                "desc": "Garantir l'intégrité et la confidentialité des données de vos collaborateurs."
+            },
+            {
+                "title": "Favoriser",
+                "desc": "Accompagner l'acculturation digitale pour une adoption réussie."
+            },
+            {
+                "title": "Garantir",
+                "desc": "Assurer une éthique inébranlable dans l'usage de l'IA."
+            }
+        ]
+    },
+    "domains": {
+        "title": "Domaines d'Intervention",
+        "items": [
+            {
+                "title": "Diagnostic de maturité digitale",
+                "desc": "Évaluation de votre écosystème actuel et identification des opportunités de digitalisation."
+            },
+            {
+                "title": "Stratégie de digitalisation RH",
+                "desc": "Feuille de route pragmatique pour passer d'une gestion manuelle à des processus agiles."
+            },
+            {
+                "title": "Accompagnement SIRH",
+                "desc": "Aide au choix, déploiement et optimisation de vos solutions de gestion RH."
+            },
+            {
+                "title": "IA appliquée aux RH",
+                "focus": true,
+                "desc": "Mise en place d'IA générative pour le recrutement, la formation et le People Analytics."
+            },
+            {
+                "title": "Éthique & Gouvernance Data",
+                "desc": "Cadre de régulation et de conformité pour un usage responsable de la donnée."
+            }
+        ]
+    },
+    "value_added": {
+        "title": "Notre Valeur Ajoutée",
+        "items": [
+            {
+                "title": "Approche progressive",
+                "desc": "Une transformation par étapes pour garantir l'appropriation."
+            },
+            {
+                "title": "Articulation RH/IT",
+                "desc": "Un pont solide entre les besoins métiers et les solutions techniques."
+            },
+            {
+                "title": "Connaissance Afrique",
+                "desc": "Une maîtrise parfaite des contextes et infrastructures locaux.",
+                "highlight": true
+            },
+            {
+                "title": "Solutions adaptées",
+                "desc": "Des outils calibrés pour vos contraintes et vos ambitions."
+            }
+        ]
+    },
+    "insights": {
+        "title": "Le saviez-vous ?",
+        "facts": [
+            "L'adoption de l'IA dans les RH en Afrique pourrait augmenter la productivité des talents de 25% d'ici 2030.",
+            "70% des entreprises africaines considèrent la digitalisation RH comme une priorité absolue.",
+            "L'IA générative permet de réduire le temps de rédaction des fiches de poste de 60%.",
+            "Le People Analytics réduit le taux de rotation du personnel de 15% en moyenne."
+        ]
+    },
+    "cta": {
+        "title": "Prêt pour la transformation ?",
+        "subtitle": "Contactez-nous pour construire votre feuille de route digitale et IA RH.",
+        "button": "Planifier une consultation"
+    }
+}

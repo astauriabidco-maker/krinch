@@ -1,0 +1,99 @@
+{
+    "meta": {
+        "title": "Our Services | HR Consulting & Transformation",
+        "description": "Explore our expertise: HR Strategy, Digitalization, Organizational Transformation, and AI for businesses and institutions in Africa."
+    },
+    "services_page": {
+        "hero": {
+            "title": "Our Services",
+            "intro": "We support the sustainable transformation of your organization by intervening across the entire HR value chain."
+        },
+        "value_cycle": {
+            "title": "The HR Value Cycle",
+            "steps": [
+                "Audit",
+                "Strategy",
+                "Implementation",
+                "Performance"
+            ]
+        },
+        "labels": {
+            "result": "👉 Result",
+            "innovation": "Innovation Impact"
+        },
+        "pillars": {
+            "strategy": {
+                "title": "HR Strategy & Advisory",
+                "description": "Aligning your human capital with business objectives.",
+                "items": [
+                    "Comprehensive HR Audit & Diagnosis",
+                    "HR Function Governance & Structuring",
+                    "Strategic Workforce Planning",
+                    "Compensation Policy Design"
+                ],
+                "result": "A structured organization and an HR function aligned with global strategy."
+            },
+            "digital": {
+                "title": "Digital HR & HRIS",
+                "description": "Modernizing processes for increased agility.",
+                "items": [
+                    "Software Selection Support",
+                    "Implementation Assistance (AMOA)",
+                    "Process Optimization & Digitalization",
+                    "HR Data Security"
+                ],
+                "result": "Automated processes and 30% increase in HR productivity."
+            },
+            "transformation": {
+                "title": "Transformation & Change",
+                "description": "Leading the evolution of your corporate culture.",
+                "items": [
+                    "HR Support for Mergers & Acquisitions",
+                    "Corporate Culture Revamp",
+                    "Managerial Model Evolution",
+                    "Hybrid Work Implementation"
+                ],
+                "result": "A resilient corporate culture and strong buy-in for change."
+            },
+            "ai_data": {
+                "title": "HR AI & Data Analytics",
+                "description": "Data-driven decision making.",
+                "badge": "Innovation",
+                "items": [
+                    "HR Dashboard Deployment",
+                    "Generative AI Integration for HR",
+                    "Predictive Turnover Analysis",
+                    "Data-Driven Recruiting"
+                ],
+                "result": "Predictive HR management and fact-based decision making."
+            },
+            "training": {
+                "title": "Training & Development",
+                "description": "Scaling your leaders' capabilities.",
+                "items": [
+                    "Leadership & Management Programs",
+                    "Soft Skills Development",
+                    "Digital & AI Literacy",
+                    "Executive Coaching"
+                ],
+                "result": "Strengthened management and teams ready for future challenges."
+            },
+            "recruitment": {
+                "title": "Talent Acquisition",
+                "description": "Attracting top profiles for your growth.",
+                "items": [
+                    "Executive Search & Headhunting",
+                    "Employer Branding Development",
+                    "Candidate Experience Optimization",
+                    "Recruitment Process Outsourcing (RPO)"
+                ],
+                "result": "Increased attractiveness and integration of strategic talent."
+            }
+        },
+        "engagement": {
+            "title": "Our Engagement",
+            "text": "Beyond consulting, we are committed to building concrete, sustainable, and high-impact solutions for your development.",
+            "cta": "Contact us"
+        }
+    }
+}

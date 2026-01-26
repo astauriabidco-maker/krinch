@@ -1,0 +1,114 @@
+{
+    "meta": {
+        "title": "Carrières | Krinch & Partners - Rejoignez l'excellence",
+        "description": "Construisez votre avenir avec un cabinet de conseil leader en Afrique. Découvrez nos opportunités, notre culture et notre processus de recrutement."
+    },
+    "careers_page": {
+        "hero": {
+            "title": "Construisez l'avenir des organisations avec nous",
+            "subtitle": "Rejoignez une équipe d'experts passionnés par la transformation durable et l'excellence opérationnelle."
+        },
+        "why_join": {
+            "title": "Pourquoi nous rejoindre ?",
+            "pillars": [
+                {
+                    "title": "Impact Réel",
+                    "desc": "Intervenez sur des projets stratégiques à fort impact pour le développement du continent.",
+                    "icon": "Zap"
+                },
+                {
+                    "title": "Apprentissage Continu",
+                    "desc": "Bénéficiez d'un environnement stimulant qui favorise le développement de vos compétences.",
+                    "icon": "GraduationCap"
+                },
+                {
+                    "title": "Excellence & Collaboration",
+                    "desc": "Travaillez au sein d'une équipe soudée où la rigueur rime avec bienveillance.",
+                    "icon": "Users"
+                }
+            ]
+        },
+        "profiles": {
+            "title": "Nos profils recherchés",
+            "jobs": [
+                {
+                    "title": "Consultant Senior RH",
+                    "level": "Expérimenté",
+                    "tags": [
+                        "Conseil",
+                        "Stratégie RH"
+                    ]
+                },
+                {
+                    "title": "Expert SIRH / Digital",
+                    "level": "Confirmé",
+                    "tags": [
+                        "Tech",
+                        "Implémentation"
+                    ]
+                },
+                {
+                    "title": "Data Analyst RH",
+                    "level": "Junior/Sénior",
+                    "tags": [
+                        "Analytics",
+                        "IA"
+                    ]
+                },
+                {
+                    "title": "Change Manager",
+                    "level": "Confirmé",
+                    "tags": [
+                        "Transformation",
+                        "Coaching"
+                    ]
+                }
+            ]
+        },
+        "process": {
+            "title": "Notre processus de recrutement",
+            "steps": [
+                {
+                    "label": "Réception du CV",
+                    "desc": "Analyse de votre parcours et de vos compétences."
+                },
+                {
+                    "label": "Entretien de présélection",
+                    "desc": "Premier échange pour comprendre vos motivations."
+                },
+                {
+                    "label": "Entretien technique",
+                    "desc": "Étude de cas ou discussion approfondie sur votre expertise."
+                },
+                {
+                    "label": "Offre finale",
+                    "desc": "Proposition d'embauche et accueil au sein du cabinet."
+                }
+            ]
+        },
+        "testimonial": {
+            "text": "Chez Krinch & Partners, j'ai trouvé bien plus qu'un emploi : une véritable aventure intellectuelle. Chaque mission est un défi qui nous pousse à l'excellence tout en restant ancré dans les réalités locales.",
+            "author": "Félix M.",
+            "role": "Consultant Senior Transformation"
+        },
+        "form": {
+            "title": "Postuler maintenant",
+            "subtitle": "Remplissez le formulaire ci-dessous pour nous transmettre votre candidature.",
+            "fields": {
+                "first_name": "Prénom",
+                "last_name": "Nom",
+                "email": "Email",
+                "phone": "Téléphone",
+                "position": "Poste visé",
+                "linkedin": "Lien LinkedIn",
+                "cv": "Télécharger votre CV (PDF/Docx)"
+            },
+            "button": "Envoyer ma candidature",
+            "privacy": "Vos données sont traitées de manière strictement confidentielle conformément à notre politique de protection des données (RGPD).",
+            "spontaneous": {
+                "text": "Vous avez un talent rare ? Envoyez-nous votre candidature spontanée.",
+                "button": "Candidature spontanée"
+            }
+        }
+    }
+}

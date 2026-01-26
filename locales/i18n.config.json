@@ -1,0 +1,10 @@
+{
+    "defaultLocale": "fr",
+    "locales": [
+        "fr",
+        "en"
+    ],
+    "routing": {
+        "strategy": "prefix_except_default"
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "title": "Votre organisation est-elle prête pour l'IA ?",
+    "subtitle": "Évaluez votre maturité digitale et découvrez votre potentiel d'intégration de l'intelligence artificielle en 2 minutes.",
+    "start": "Commencer le diagnostic",
+    "next": "Suivant",
+    "finish": "Voir mon score",
+    "progress": "Progression",
+    "questions": [
+        {
+            "id": 1,
+            "text": "Vos données RH sont-elles centralisées et numérisées ?",
+            "options": [
+                {
+                    "label": "Oui, totalement centralisées",
+                    "points": 10
+                },
+                {
+                    "label": "Partiellement (plusieurs outils)",
+                    "points": 5
+                },
+                {
+                    "label": "Non, majoritairement sur Excel/Papier",
+                    "points": 0
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "text": "Vos processus de recrutement sont-ils automatisés ?",
+            "options": [
+                {
+                    "label": "Totalement (ATS + Matching IA)",
+                    "points": 10
+                },
+                {
+                    "label": "Un peu (Outil de gestion basique)",
+                    "points": 5
+                },
+                {
+                    "label": "Pas du tout",
+                    "points": 0
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "text": "Vos managers sont-ils sensibilisés aux enjeux de l'IA ?",
+            "options": [
+                {
+                    "label": "Oui, ils sont formés",
+                    "points": 10
+                },
+                {
+                    "label": "En cours d'acculturation",
+                    "points": 5
+                },
+                {
+                    "label": "Non, pas encore",
+                    "points": 0
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "text": "Utilisez-vous des outils d'analyse prédictive (ex: turnover) ?",
+            "options": [
+                {
+                    "label": "Régulièrement",
+                    "points": 10
+                },
+                {
+                    "label": "Nous commençons à explorer",
+                    "points": 5
+                },
+                {
+                    "label": "Non",
+                    "points": 0
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "text": "Existe-t-il une feuille de route IA dans votre stratégie ?",
+            "options": [
+                {
+                    "label": "Oui, claire et budgétisée",
+                    "points": 10
+                },
+                {
+                    "label": "En cours de réflexion",
+                    "points": 5
+                },
+                {
+                    "label": "Non",
+                    "points": 0
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "text": "Avez-vous défini des règles d'éthique pour l'usage de l'IA ?",
+            "options": [
+                {
+                    "label": "Oui, charte établie",
+                    "points": 10
+                },
+                {
+                    "label": "Sujet abordé mais pas finalisé",
+                    "points": 5
+                },
+                {
+                    "label": "Non",
+                    "points": 0
+                }
+            ]
+        }
+    ],
+    "results": {
+        "title": "Votre Score : {score}%",
+        "description": "Basé sur vos réponses, voici votre profil de maturité IA :",
+        "discovery": {
+            "label": "Phase de Découverte",
+            "text": "Votre organisation commence son voyage digital. Un travail de structuration des données est nécessaire avant d'intégrer l'IA."
+        },
+        "transition": {
+            "label": "En Transition",
+            "text": "Vous avez des bases solides. Vous êtes prêt à implémenter des cas d'usage IA spécifiques pour doper votre productivité."
+        },
+        "pioneer": {
+            "label": "Pionnier IA",
+            "text": "Votre maturité est exemplaire. L'IA peut devenir un avantage compétitif majeur et transformationnel pour vous."
+        },
+        "cta": "Recevoir mon rapport détaillé",
+        "modal": {
+            "title": "Diagnostic Détaillé",
+            "subtitle": "Laissez-nous vos coordonnées pour recevoir votre plan d'action personnalisé par email.",
+            "name": "Nom complet",
+            "email": "Adresse email professionnelle",
+            "company": "Entreprise",
+            "submit": "Envoyer le rapport",
+            "success": "Merci ! Votre rapport est en route."
+        }
+    }
+}

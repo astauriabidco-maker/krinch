@@ -1,0 +1,50 @@
+{
+    "meta": {
+        "title": "Insights & Analyses | Krinch & Partners",
+        "description": "Retrouvez nos dernières analyses et réflexions sur la transformation RH, l'IA et le leadership en Afrique."
+    },
+    "filter": {
+        "all": "Tout",
+        "digital": "Transformation Digitale",
+        "ia": "IA RH & Data",
+        "strategy": "Stratégie & Leadership"
+    },
+    "articles": [
+        {
+            "slug": "ia-rh-douala-enjeux-2026",
+            "category": "ia",
+            "categoryLabel": "IA RH & Data",
+            "image": "/images/insights/ia-rh.png",
+            "title": "L'IA à Douala : Les enjeux du recrutement prédictif en 2026",
+            "excerpt": "Comment les entreprises du littoral camerounais s'adaptent aux nouveaux outils d'intelligence artificielle pour identifier les talents.",
+            "date": "24 Jan 2026",
+            "readTime": "5 min read",
+            "content": "L'intégration de l'IA dans les processus de recrutement ne relève plus de la science-fiction pour les entreprises camerounaises..."
+        },
+        {
+            "slug": "transformation-digitale-rh-afrique",
+            "category": "digital",
+            "categoryLabel": "Transformation Digitale",
+            "image": "/images/insights/digital.png",
+            "title": "SIRH : Les clés d'une transition réussie pour les PME africaines",
+            "excerpt": "Le passage au tout numérique dans les RH nécessite une approche culturelle avant d'être technologique.",
+            "date": "18 Jan 2026",
+            "readTime": "7 min read",
+            "content": "La digitalisation des ressources humaines est aujourd'hui un impératif pour toute organisation souhaitant rester compétitive..."
+        },
+        {
+            "slug": "leadership-crise-croissance",
+            "category": "strategy",
+            "categoryLabel": "Stratégie & Leadership",
+            "image": "/images/insights/leadership.png",
+            "title": "Le Leadership à l'épreuve de la croissance rapide",
+            "excerpt": "Comment maintenir la culture d'entreprise lors d'une phase d'expansion accélérée dans la zone CEMAC.",
+            "date": "10 Jan 2026",
+            "readTime": "6 min read",
+            "content": "Gérer une croissance rapide est un défi qui teste la solidité des structures de leadership et la résilience des équipes..."
+        }
+    ],
+    "cta_article": "Ce sujet vous concerne ?",
+    "cta_button": "Parler à un expert",
+    "newsletter_success": "Merci ! Vous avez rejoint le cercle de réflexion de Krinch & Partners."
+}

@@ -1,0 +1,90 @@
+{
+    "meta": {
+        "title": "About Us | Krinch & Partners - HR Expertise in Africa",
+        "description": "Discover our mission, vision, and values. A pan-African firm dedicated to HR consulting excellence and organizational transformation."
+    },
+    "who_we_are": {
+        "title": "Who We Are",
+        "content": "Krinch & Partners is a human resources and organizational transformation consulting firm, born from a desire to reconcile international standards of excellence with an intimate understanding of African economic ecosystems. Based in Cameroon, we support companies and institutions through their most complex challenges."
+    },
+    "vision": {
+        "title": "Our Vision",
+        "subtitle": "We aspire to be the go-to partner for building high-performing, resilient, and forward-looking African organizations.",
+        "governance": {
+            "title": "Governance",
+            "desc": "Establishing transparent and effective decision-making structures."
+        },
+        "engagement": {
+            "title": "Engagement",
+            "desc": "Mobilizing human capital around shared objectives."
+        },
+        "alignment": {
+            "title": "Alignment",
+            "desc": "Ensuring consistency between business strategy and HR practices."
+        }
+    },
+    "approach": {
+        "title": "Our Approach",
+        "subtitle": "A rigorous four-step methodology to ensure measurable impact.",
+        "steps": [
+            {
+                "title": "Diagnostic",
+                "desc": "Deep analysis of your current situation and identification of performance levers."
+            },
+            {
+                "title": "Solution",
+                "desc": "Co-creation of tailored strategies adapted to your context and ambitions."
+            },
+            {
+                "title": "Accompagnement",
+                "desc": "Operational implementation alongside your teams to ensure knowledge transfer."
+            },
+            {
+                "title": "Measurement",
+                "desc": "Rigorous evaluation of results and adjustments for maximum sustainability."
+            }
+        ]
+    },
+    "values": {
+        "title": "Our Values",
+        "items": [
+            {
+                "title": "Excellence",
+                "desc": "Constantly exceeding expectations and the pursuit of technical perfection."
+            },
+            {
+                "title": "Integrity",
+                "desc": "Unwavering professional ethics and full transparency with our partners."
+            },
+            {
+                "title": "Impact",
+                "desc": "Obsession with real added value and concrete transformation on the ground."
+            },
+            {
+                "title": "Partnership",
+                "desc": "A long-lasting trust relationship built on listening and mutual success."
+            }
+        ]
+    },
+    "experts": {
+        "title": "Our Experts",
+        "subtitle": "A team of seasoned practitioners at the service of your transformation.",
+        "items": [
+            {
+                "name": "Jean-Paul Ewane",
+                "role": "Managing Partner - HR Strategy",
+                "bio": "Over 20 years of experience in management consulting and organizational transformation in Africa."
+            },
+            {
+                "name": "Marie-Thérèse Ndongo",
+                "role": "Director of Digital HR & AI",
+                "bio": "Expert in HRIS and technological change management, specializing in AI integration."
+            },
+            {
+                "name": "Marc-Arthur Kamga",
+                "role": "Senior Consultant - Talent Management",
+                "bio": "Specialist in executive search and leadership development."
+            }
+        ]
+    }
+}

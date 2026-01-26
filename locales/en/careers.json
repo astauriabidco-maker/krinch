@@ -1,0 +1,114 @@
+{
+    "meta": {
+        "title": "Careers | Krinch & Partners - Join Excellence",
+        "description": "Build your future with a leading consulting firm in Africa. Discover our opportunities, our culture, and our recruitment process."
+    },
+    "careers_page": {
+        "hero": {
+            "title": "Build the Future of Organizations with Us",
+            "subtitle": "Join a team of experts passionate about sustainable transformation and operational excellence."
+        },
+        "why_join": {
+            "title": "Why Join Us?",
+            "pillars": [
+                {
+                    "title": "Real Impact",
+                    "desc": "Work on strategic high-impact projects for the continent's development.",
+                    "icon": "Zap"
+                },
+                {
+                    "title": "Continuous Learning",
+                    "desc": "Benefit from a stimulating environment that fosters your skill development.",
+                    "icon": "GraduationCap"
+                },
+                {
+                    "title": "Excellence & Collaboration",
+                    "desc": "Work in a close-knit team where rigor rhymes with kindness.",
+                    "icon": "Users"
+                }
+            ]
+        },
+        "profiles": {
+            "title": "Our Sought Profiles",
+            "jobs": [
+                {
+                    "title": "Senior HR Consultant",
+                    "level": "Experienced",
+                    "tags": [
+                        "Consulting",
+                        "HR Strategy"
+                    ]
+                },
+                {
+                    "title": "HRIS / Digital Expert",
+                    "level": "Senior",
+                    "tags": [
+                        "Tech",
+                        "Implementation"
+                    ]
+                },
+                {
+                    "title": "HR Data Analyst",
+                    "level": "Junior/Senior",
+                    "tags": [
+                        "Analytics",
+                        "AI"
+                    ]
+                },
+                {
+                    "title": "Change Manager",
+                    "level": "Senior",
+                    "tags": [
+                        "Transformation",
+                        "Coaching"
+                    ]
+                }
+            ]
+        },
+        "process": {
+            "title": "Our Recruitment Process",
+            "steps": [
+                {
+                    "label": "CV Reception",
+                    "desc": "Analysis of your background and skills."
+                },
+                {
+                    "label": "Screening Interview",
+                    "desc": "First exchange to understand your motivations."
+                },
+                {
+                    "label": "Technical Interview",
+                    "desc": "Case study or deep discussion on your expertise."
+                },
+                {
+                    "label": "Final Offer",
+                    "desc": "Hiring proposal and welcome to the firm."
+                }
+            ]
+        },
+        "testimonial": {
+            "text": "At Krinch & Partners, I found much more than a job: a real intellectual adventure. Each mission is a challenge that pushes us to excellence while remaining anchored in local realities.",
+            "author": "Felix M.",
+            "role": "Senior Transformation Consultant"
+        },
+        "form": {
+            "title": "Apply Now",
+            "subtitle": "Fill out the form below to submit your application.",
+            "fields": {
+                "first_name": "First Name",
+                "last_name": "Last Name",
+                "email": "Email",
+                "phone": "Phone",
+                "position": "Target Position",
+                "linkedin": "LinkedIn Profile",
+                "cv": "Upload your CV (PDF/Docx)"
+            },
+            "button": "Submit Application",
+            "privacy": "Your data is processed in strict confidentiality according to our data protection policy (GDPR).",
+            "spontaneous": {
+                "text": "Do you have a rare talent? Send us your spontaneous application.",
+                "button": "Spontaneous Application"
+            }
+        }
+    }
+}

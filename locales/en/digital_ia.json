@@ -1,0 +1,93 @@
+{
+    "meta": {
+        "title": "Digital & AI HR | Krinch & Partners - HR Innovation in Africa",
+        "description": "Transform your HR function with tomorrow's technologies. People Analytics, Generative AI, and HRIS for enhanced performance."
+    },
+    "hero": {
+        "title": "Digital & AI HR",
+        "subtitle": "Technological innovation serving human excellence."
+    },
+    "vision": {
+        "title": "Digital is not an end in itself",
+        "pillars": [
+            {
+                "title": "Identity/Identify",
+                "desc": "Finding the HR technologies that truly create value for your context."
+            },
+            {
+                "title": "Secure",
+                "desc": "Guaranteeing the integrity and confidentiality of your employees' data."
+            },
+            {
+                "title": "Foster",
+                "desc": "Supporting digital literacy for successful adoption."
+            },
+            {
+                "title": "Guarantee",
+                "desc": "Ensuring unwavering ethics in the use of AI."
+            }
+        ]
+    },
+    "domains": {
+        "title": "Areas of Intervention",
+        "items": [
+            {
+                "title": "Digital Maturity Diagnosis",
+                "desc": "Evaluation of your current ecosystem and identification of digitalization opportunities."
+            },
+            {
+                "title": "HR Digitalization Strategy",
+                "desc": "Pragmatic roadmap to move from manual management to agile processes."
+            },
+            {
+                "title": "HRIS Support",
+                "desc": "Assistance in choosing, deploying, and optimizing your HR management solutions."
+            },
+            {
+                "title": "AI Applied to HR",
+                "focus": true,
+                "desc": "Implementation of Generative AI for recruitment, training, and People Analytics."
+            },
+            {
+                "title": "Ethics & Data Governance",
+                "desc": "Regulation and compliance framework for responsible data use."
+            }
+        ]
+    },
+    "value_added": {
+        "title": "Our Added Value",
+        "items": [
+            {
+                "title": "Progressive Approach",
+                "desc": "Step-by-step transformation to ensure ownership."
+            },
+            {
+                "title": "HR/IT Synergy",
+                "desc": "A solid bridge between business needs and technical solutions."
+            },
+            {
+                "title": "African Context Expertise",
+                "desc": "Perfect mastery of local contexts and infrastructures.",
+                "highlight": true
+            },
+            {
+                "title": "Tailored Solutions",
+                "desc": "Tools calibrated to your constraints and ambitions."
+            }
+        ]
+    },
+    "insights": {
+        "title": "Did you know?",
+        "facts": [
+            "AI adoption in HR in Africa could increase talent productivity by 25% by 2030.",
+            "70% of African companies consider HR digitalization a top priority.",
+            "Generative AI can reduce job description writing time by 60%.",
+            "People Analytics reduces employee turnover by an average of 15%."
+        ]
+    },
+    "cta": {
+        "title": "Ready for transformation?",
+        "subtitle": "Contact us to build your Digital and AI HR roadmap.",
+        "button": "Schedule a consultation"
+    }
+}

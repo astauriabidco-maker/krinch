@@ -1,0 +1,33 @@
+{
+    "cookies": {
+        "banner": {
+            "title": "Gestion des cookies",
+            "message": "Nous utilisons des cookies pour optimiser votre expérience, analyser notre trafic et vous proposer des contenus adaptés. Certains sont nécessaires au bon fonctionnement du site.",
+            "accept": "Tout accepter",
+            "decline": "Tout refuser",
+            "settings": "Paramétrer"
+        },
+        "modal": {
+            "title": "Paramètres des cookies",
+            "description": "Vous pouvez choisir les types de cookies que vous souhaitez autoriser. Vos préférences seront conservées pendant 6 mois.",
+            "save": "Enregistrer mes préférences",
+            "accept_all": "Tout accepter",
+            "decline_all": "Tout refuser",
+            "categories": {
+                "necessary": {
+                    "title": "Strictement nécessaires",
+                    "description": "Ces cookies sont essentiels au fonctionnement du site et ne peuvent pas être désactivés."
+                },
+                "analytics": {
+                    "title": "Mesure d'audience",
+                    "description": "Ces cookies nous permettent de comprendre comment vous utilisez le site afin d'en améliorer l'ergonomie."
+                },
+                "functional": {
+                    "title": "Fonctionnalités avancées",
+                    "description": "Ces cookies permettent d'activer des fonctionnalités avancées comme la lecture de vidéos ou les cartes interactives."
+                }
+            }
+        },
+        "footer_link": "Gestion des cookies"
+    }
+}

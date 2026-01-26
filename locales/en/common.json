@@ -1,0 +1,141 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Our Services",
+        "insights": "Insights",
+        "careers": "Careers",
+        "contact": "Contact",
+        "expertise": "Expertise"
+    },
+    "buttons": {
+        "expert": "Speak to an expert",
+        "contact": "Contact us",
+        "apply": "Apply now",
+        "discover": "Discover our solutions"
+    },
+    "hero": {
+        "title": "HR Consulting & Organizational Transformation in Cameroon",
+        "subtitle": "Building the future of organizations in Africa with excellence, sobriety, and credibility.",
+        "cta": "Contact our experts",
+        "secondary_cta": "HR Consultant Douala",
+        "promise": "International ambition, deep local roots in Cameroon."
+    },
+    "promise": {
+        "title": "HR Audit & Strategy Cameroon",
+        "subtitle": "We support the sustainable transformation of organizations through a rigorous, pragmatic approach tailored to the African market.",
+        "combination_title": "Our pillars of excellence:",
+        "items": [
+            "High-level strategic HR expertise",
+            "Deep roots in Douala and Yaoundé business realities",
+            "Operational sobriety and AI in HR Africa expertise",
+            "Commitment to sustainable performance"
+        ]
+    },
+    "why_us": {
+        "title": "Why Krinch & Partners?",
+        "items": [
+            {
+                "title": "Local Expertise",
+                "desc": "A refined understanding of African economic ecosystems (Cameroon, CEMAC zone, West Africa)."
+            },
+            {
+                "title": "Senior Consultants",
+                "desc": "A team of seasoned practitioners from international consulting firms and large corporations."
+            },
+            {
+                "title": "Agility & Bespoke",
+                "desc": "Solutions adapted to your size and specific challenges, far from one-size-fits-all models."
+            },
+            {
+                "title": "Transformational Vision",
+                "desc": "Beyond consulting, we build the internal capabilities necessary for your future autonomy."
+            }
+        ]
+    },
+    "sectors_preview": {
+        "title": "Industries We Serve",
+        "items": [
+            "Banking & Finance",
+            "Energy & Mining",
+            "Industry",
+            "Public Sector",
+            "International NGOs",
+            "Telecoms & Tech",
+            "SMEs & Startups"
+        ]
+    },
+    "final_cta": {
+        "text": "Ready to transform your organization and unlock the potential of your talents?",
+        "button": "Get in touch with our experts today"
+    },
+    "services": {
+        "title": "HR Advisory & Organizational Transformation",
+        "subtitle": "Supporting your growth in Cameroon and internationally through bespoke solutions.",
+        "rh": {
+            "title": "Strategic HR Consulting",
+            "desc": "Human capital optimization, talent management, and HR Audit Cameroon."
+        },
+        "digital": {
+            "title": "Digital HR & HRIS Africa",
+            "desc": "Accelerating your digital maturity and HR process digitalization."
+        },
+        "ia": {
+            "title": "HR AI & Data Analytics",
+            "desc": "Leveraging data and AI in HR Africa for fact-based leadership."
+        },
+        "transformation": {
+            "title": "Transformation in Yaoundé & Douala",
+            "desc": "Change management and strategic organizational transformation."
+        },
+        "formation": {
+            "title": "Executive Training & Coaching",
+            "desc": "Skills development and leadership for senior executives in the CEMAC zone."
+        },
+        "recrutement": {
+            "title": "Talent Acquisition & Headhunting",
+            "desc": "Executive search and recruitment firm to attract top talent in Cameroon."
+        },
+        "discover": "Discover all our consulting solutions"
+    },
+    "footer": {
+        "legal": "Legal Mentions",
+        "privacy": "Privacy Policy",
+        "rights": "© 2026 Krinch & Partners. All rights reserved."
+    },
+    "testimonials": {
+        "badge": "Social Proof",
+        "title": "What our clients say about us",
+        "items": [
+            {
+                "quote": "Krinch & Partners' support was decisive in the digitalization of our HR processes. Local expertise with international standards.",
+                "author": "Chief Human Resources Officer",
+                "company": "Banking Sector (CEMAC)"
+            },
+            {
+                "quote": "A pragmatic partner who truly understands the challenges of growing SMEs in Cameroon.",
+                "author": "Founder",
+                "company": "Industrial Company"
+            },
+            {
+                "quote": "Their mastery of HR AI allowed us to optimize our recruitment spectacularly.",
+                "author": "HR Director",
+                "company": "Telecom Group"
+            }
+        ]
+    },
+    "partners": [
+        "BANKING",
+        "INDUSTRY",
+        "ENERGY",
+        "INSURANCE",
+        "TELECOMS",
+        "NGO"
+    ],
+    "newsletter": {
+        "title": "Join the circle",
+        "description": "Get our exclusive insights on HR transformation in Africa.",
+        "placeholder": "Your email address",
+        "button": "Subscribe"
+    }
+}

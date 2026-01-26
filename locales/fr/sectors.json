@@ -1,0 +1,106 @@
+{
+    "meta": {
+        "title": "Secteurs & Expertises | Krinch & Partners - Expertise PME & Afrique",
+        "description": "Une expertise sectorielle ancrée localement. Nous accompagnons les PME, Grandes Entreprises et Institutions avec des standards internationaux appliqués aux réalités africaines."
+    },
+    "sectors_page": {
+        "hero": {
+            "title": "Secteurs & Expertises",
+            "subtitle": "Au service de la croissance du tissu économique local et continental.",
+            "sme_badge": "Cœur de notre expertise : Les PME",
+            "intro": "Nous comprenons que 90% du tissu économique camerounais repose sur vous. Notre mission est de vous donner les outils des grands groupes."
+        },
+        "segments": {
+            "pme": {
+                "title": "PME & Entreprises en croissance",
+                "points": [
+                    "Professionnalisation de la gestion RH",
+                    "Mise en place de processus agiles",
+                    "Recrutement de talents stratégiques",
+                    "Structuration de la culture d'entreprise"
+                ],
+                "highlight": "👉 Notre Approche",
+                "result": "Un passage à l'échelle sécurisé et une structuration digne des standards internationaux."
+            },
+            "ge": {
+                "title": "Grandes Entreprises",
+                "points": [
+                    "Transformation digitale & SIRH",
+                    "Audit de conformité & Gouvernance",
+                    "Gestion prévisionnelle des talents (GPEC)",
+                    "Externalisation du recrutement (RPO)"
+                ],
+                "highlight": "👉 Résultat",
+                "result": "Une fonction RH optimisée, performante et alignée sur vos enjeux globaux."
+            },
+            "institutions": {
+                "title": "Institutions Publiques",
+                "points": [
+                    "Modernisation de l'administration",
+                    "Audit de performance organisationnelle",
+                    "Gestion du changement structurel",
+                    "Renforcement des capacités managériales"
+                ],
+                "highlight": "👉 Impact",
+                "result": "Un service public modernisé et des équipes engagées pour le développement."
+            },
+            "ong": {
+                "title": "ONG & International",
+                "points": [
+                    "Conformité aux standards internationaux",
+                    "Gestion du personnel national et expat",
+                    "Politiques de rémunération complexes",
+                    "Audit des risques RH"
+                ],
+                "highlight": "👉 Garantie",
+                "result": "Une gestion RH rigoureuse, transparente et conforme aux exigences des bailleurs."
+            }
+        },
+        "industries": {
+            "title": "Secteurs d'activité accompagnés",
+            "list": [
+                {
+                    "id": "finance",
+                    "title": "Banques & Assurances"
+                },
+                {
+                    "id": "energy",
+                    "title": "Industrie & Énergie"
+                },
+                {
+                    "id": "telecom",
+                    "title": "Télécoms"
+                },
+                {
+                    "id": "public",
+                    "title": "Secteur Public & ONG"
+                },
+                {
+                    "id": "multisector",
+                    "title": "PME Multisectorielles"
+                }
+            ]
+        },
+        "engagement": {
+            "title": "Notre Engagement",
+            "pillars": [
+                {
+                    "title": "Sur mesure",
+                    "desc": "Des solutions adaptées à chaque contexte."
+                },
+                {
+                    "title": "Adapté",
+                    "desc": "Respect des spécificités locales."
+                },
+                {
+                    "title": "Efficacité",
+                    "desc": "Focus sur l'impact opérationnel."
+                },
+                {
+                    "title": "Standards internationaux",
+                    "desc": "Excellence et rigueur globale."
+                }
+            ]
+        }
+    }
+}
