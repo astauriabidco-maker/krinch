@@ -122,3 +122,52 @@ model SiteSettings {
   socialLinks  Json?    // { linkedin: "url", etc. }
   updatedAt    DateTime @updatedAt
 }
+
+// 5. NEWSLETTER
+
+model NewsletterSubscriber {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  subscribedAt DateTime @default(now())
+  active       Boolean  @default(true)
+}
+
+// 6. CONTACT MESSAGES
+
+model ContactMessage {
+  id              String   @id @default(cuid())
+  name            String
+  email           String
+  role            String?
+  company         String?
+  companySize     String?
+  subject         String?
+  message         String
+  newsletter      Boolean  @default(false)
+  read            Boolean  @default(false)
+  createdAt       DateTime @default(now())
+}
+
+// 7. SITE CONTENT (Full CMS)
+
+model SiteContent {
+  id        String   @id @default(cuid())
+  fileKey   String   // 'common', 'about', 'services', 'training', etc.
+  locale    String   // 'fr' or 'en'
+  content   String   // Full JSON string of the page content
+  updatedAt DateTime @updatedAt
+
+  @@unique([fileKey, locale])
+}
+
+// 8. BRAND & DESIGN SETTINGS
+model BrandSettings {
+  id             String   @id @default("default")
+  primaryColor   String   @default("#0F2A44")
+  secondaryColor String   @default("#D4AF37")
+  accentColor    String   @default("#F5A21D")
+  logoUrl        String?
+  fontFamily     String   @default("Inter")
+  updatedAt      DateTime @updatedAt
+}
+

@@ -1,6 +1,6 @@
-import { db } from '../lib/db';
-import { LeadSchema } from '../lib/schemas';
-import { notifyAdmin } from '../lib/notifications';
+import { db } from '@/lib/db';
+import { LeadSchema } from '@/lib/schemas';
+import { notifyAdmin } from '@/lib/notifications';
 import { z } from 'zod';
 
 export type CreateLeadDTO = z.infer<typeof LeadSchema>;

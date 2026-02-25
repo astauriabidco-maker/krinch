@@ -1,18 +1,17 @@
 'use server'
 
-import { createLead } from '../services/leads';
-import { requireAdmin, requireEditor } from '../lib/security';
-import { createPost, updatePost } from '../services/posts';
+import { createLead } from '@/services/leads';
+import { requireAdmin, requireEditor } from '@/lib/security';
+import { createPost, updatePost, deletePost, togglePostPublished } from '@/services/posts';
 import { revalidatePath } from 'next/cache';
-import { LeadSchema, BlogPostSchema } from '../lib/schemas';
+import { LeadSchema, BlogPostSchema } from '@/lib/schemas';
+import { z } from 'zod';
 
 // --- LEADS ---
 
 export async function submitLeadAction(formData: FormData) {
-    // Convertit FormData en objet simple
-    const rawData: any = {};
+    const rawData: Record<string, unknown> = {};
     formData.forEach((value, key) => {
-        // Gestion simpliste des objets JSON si nécessaire, sinon string
         if (key === 'answers' || key === 'score') {
             try { rawData[key] = JSON.parse(value as string); } catch { rawData[key] = value; }
         } else {
@@ -20,14 +19,12 @@ export async function submitLeadAction(formData: FormData) {
         }
     });
 
-    // Validation
     const validatedFields = LeadSchema.safeParse(rawData);
 
     if (!validatedFields.success) {
         return { success: false, errors: validatedFields.error.flatten().fieldErrors };
     }
 
-    // Appel Service
     const result = await createLead(validatedFields.data);
     return result;
 }
@@ -35,27 +32,55 @@ export async function submitLeadAction(formData: FormData) {
 
 // --- BLOG (Protected) ---
 
-export async function createBlogPostAction(data: any) {
+export async function createBlogPostAction(data: z.infer<typeof BlogPostSchema>) {
     try {
-        await requireEditor(); // Protection
+        await requireEditor();
         const validated = BlogPostSchema.parse(data);
         await createPost(validated);
         revalidatePath('/insights');
         return { success: true };
-    } catch (e: any) {
-        return { success: false, error: e.message };
+    } catch (e: unknown) {
+        const message = e instanceof Error ? e.message : 'Erreur inconnue';
+        return { success: false, error: message };
     }
 }
 
-export async function updateBlogPostAction(id: string, data: any) {
+export async function updateBlogPostAction(id: string, data: Partial<z.infer<typeof BlogPostSchema>>) {
     try {
-        await requireEditor(); // Protection
-        // Note: On pourrait utiliser partial() de Zod ici
-        await updatePost(id, data);
+        await requireEditor();
+        const validated = BlogPostSchema.partial().parse(data);
+        await updatePost(id, validated);
         revalidatePath('/insights');
         return { success: true };
-    } catch (e: any) {
-        return { success: false, error: e.message };
+    } catch (e: unknown) {
+        const message = e instanceof Error ? e.message : 'Erreur inconnue';
+        return { success: false, error: message };
+    }
+}
+
+export async function deleteBlogPostAction(id: string) {
+    try {
+        await requireEditor();
+        await deletePost(id);
+        revalidatePath('/insights');
+        revalidatePath('/admin/blog');
+        return { success: true };
+    } catch (e: unknown) {
+        const message = e instanceof Error ? e.message : 'Erreur inconnue';
+        return { success: false, error: message };
+    }
+}
+
+export async function toggleBlogPostPublishedAction(id: string, published: boolean) {
+    try {
+        await requireEditor();
+        await togglePostPublished(id, published);
+        revalidatePath('/insights');
+        revalidatePath('/admin/blog');
+        return { success: true };
+    } catch (e: unknown) {
+        const message = e instanceof Error ? e.message : 'Erreur inconnue';
+        return { success: false, error: message };
     }
 }
 
@@ -64,9 +89,11 @@ export async function updateBlogPostAction(id: string, data: any) {
 export async function exportLeadsAction() {
     try {
         await requireAdmin();
-        // Logique d'export CSV à implémenter si besoin
-        return { success: true, message: "Export non implémenté" };
-    } catch (e: any) {
-        return { success: false, error: e.message };
+        const { getLeads } = await import('@/services/leads');
+        const leads = await getLeads();
+        return { success: true, data: JSON.parse(JSON.stringify(leads)) };
+    } catch (e: unknown) {
+        const message = e instanceof Error ? e.message : 'Erreur inconnue';
+        return { success: false, error: message };
     }
 }

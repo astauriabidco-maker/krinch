@@ -12,15 +12,15 @@ export default function TrainingHero({ dict }: TrainingHeroProps) {
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto text-center mb-24 animate-fade-in-up">
                     <h1 className="text-4xl md:text-7xl font-serif text-primary mb-8 leading-tight">
-                        {dict.hero.title}
+                        {dict.training_hero.title}
                     </h1>
                     <div className="w-24 h-1 bg-secondary mx-auto mb-12" />
                     <h2 className="text-sm font-bold uppercase tracking-[0.4em] text-primary/40 mb-16">
-                        {dict.hero.philosophy_title}
+                        {dict.training_hero.philosophy_title}
                     </h2>
 
                     <div className="grid md:grid-cols-3 gap-12">
-                        {dict.hero.pillars.map((pillar: any, index: number) => {
+                        {dict.training_hero.pillars.map((pillar: any, index: number) => {
                             const Icon = philosophyIcons[index];
                             return (
                                 <div key={index} className="group">

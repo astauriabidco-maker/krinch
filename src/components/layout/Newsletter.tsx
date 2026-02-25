@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, CheckCircle2 } from "lucide-react";
+import { subscribeNewsletterAction } from "@/actions/newsletter";
 
 interface NewsletterProps {
     dict: any;
@@ -14,15 +15,19 @@ export default function Newsletter({ dict, variant = "minimal" }: NewsletterProp
     const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
     const n = dict.newsletter;
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!email) return;
         setStatus("loading");
-        // Simulate API call
-        setTimeout(() => {
+
+        const result = await subscribeNewsletterAction(email);
+
+        if (result.success) {
             setStatus("success");
             setEmail("");
-        }, 1500);
+        } else {
+            setStatus("idle");
+        }
     };
 
     return (

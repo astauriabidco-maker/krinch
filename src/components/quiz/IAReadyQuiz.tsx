@@ -2,22 +2,34 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronRight, BrainCircuit, Target, Lightbulb, Rocket } from "lucide-react";
+import { ChevronRight, BrainCircuit, Rocket } from "lucide-react";
 import LeadCaptureModal from "./LeadCaptureModal";
+import { submitLeadAction } from "@/actions/index";
+
+interface QuizOption {
+    label: string;
+    points: number;
+}
+
+interface QuizQuestion {
+    text: string;
+    options: QuizOption[];
+}
 
 interface IAReadyQuizProps {
-    dict: any;
+    dict: Record<string, unknown>;
     locale: string;
 }
 
 export default function IAReadyQuiz({ dict, locale }: IAReadyQuizProps) {
-    const [currentStep, setCurrentStep] = useState(0); // 0 = Intro, 1-6 = Questions, 7 = Results
+    const [currentStep, setCurrentStep] = useState(0);
     const [answers, setAnswers] = useState<number[]>([]);
     const [showModal, setShowModal] = useState(false);
     const [score, setScore] = useState(0);
 
-    const quizDict = dict.quiz;
-    const totalQuestions = quizDict.questions.length;
+    const quizDict = dict.quiz as Record<string, unknown>;
+    const questions = quizDict.questions as QuizQuestion[];
+    const totalQuestions = questions.length;
 
     const handleAnswer = (points: number) => {
         const newAnswers = [...answers, points];
@@ -36,19 +48,30 @@ export default function IAReadyQuiz({ dict, locale }: IAReadyQuizProps) {
     }, [currentStep, answers, totalQuestions]);
 
     const getResultInfo = () => {
-        if (score <= 40) return quizDict.results.discovery;
-        if (score <= 75) return quizDict.results.transition;
-        return quizDict.results.pioneer;
+        const results = quizDict.results as Record<string, Record<string, string>>;
+        if (score <= 40) return results.discovery;
+        if (score <= 75) return results.transition;
+        return results.pioneer;
     };
 
-    const currentQuestion = quizDict.questions[currentStep - 1];
+    const currentQuestion = questions[currentStep - 1];
     const progress = (currentStep / totalQuestions) * 100;
+
+    const handleLeadSubmit = async (data: { name: string; email: string; company: string; score: number }) => {
+        const formData = new FormData();
+        formData.append('name', data.name);
+        formData.append('email', data.email);
+        formData.append('company', data.company);
+        formData.append('score', String(data.score));
+        formData.append('answers', JSON.stringify(answers));
+        formData.append('serviceInterest', 'IA');
+        await submitLeadAction(formData);
+    };
 
     return (
         <div className="bg-[#f8faff] min-h-[500px] flex items-center justify-center py-20 px-6">
             <div className="max-w-3xl w-full bg-white shadow-2xl border border-gray-100 p-8 md:p-16 relative overflow-hidden">
 
-                {/* Progress Bar */}
                 {currentStep > 0 && currentStep <= totalQuestions && (
                     <div className="absolute top-0 left-0 w-full h-1 bg-gray-100 overflow-hidden">
                         <motion.div
@@ -72,16 +95,16 @@ export default function IAReadyQuiz({ dict, locale }: IAReadyQuizProps) {
                                 <BrainCircuit className="text-secondary w-10 h-10" />
                             </div>
                             <h1 className="text-3xl md:text-5xl font-serif text-primary mb-8 italic">
-                                {quizDict.title}
+                                {quizDict.title as string}
                             </h1>
                             <p className="text-primary/60 text-lg mb-12 font-sans max-w-xl mx-auto">
-                                {quizDict.subtitle}
+                                {quizDict.subtitle as string}
                             </p>
                             <button
                                 onClick={() => setCurrentStep(1)}
                                 className="bg-primary text-secondary px-12 py-6 text-sm font-bold uppercase tracking-[0.2em] hover:bg-secondary hover:text-primary transition-all flex items-center gap-4 mx-auto"
                             >
-                                {quizDict.start}
+                                {quizDict.start as string}
                                 <ChevronRight className="w-4 h-4" />
                             </button>
                         </motion.div>
@@ -107,7 +130,7 @@ export default function IAReadyQuiz({ dict, locale }: IAReadyQuizProps) {
                             </h2>
 
                             <div className="grid gap-4">
-                                {currentQuestion.options.map((option: any, idx: number) => (
+                                {currentQuestion.options.map((option: QuizOption, idx: number) => (
                                     <button
                                         key={idx}
                                         onClick={() => handleAnswer(option.points)}
@@ -151,7 +174,7 @@ export default function IAReadyQuiz({ dict, locale }: IAReadyQuizProps) {
                                 onClick={() => setShowModal(true)}
                                 className="bg-primary text-secondary px-12 py-6 text-sm font-bold uppercase tracking-[0.2em] hover:bg-secondary hover:text-primary transition-all flex items-center gap-4 mx-auto shadow-2xl"
                             >
-                                {quizDict.results.cta}
+                                {(quizDict.results as Record<string, string>).cta}
                                 <Rocket className="w-4 h-4" />
                             </button>
                         </motion.div>
@@ -162,8 +185,8 @@ export default function IAReadyQuiz({ dict, locale }: IAReadyQuizProps) {
             <LeadCaptureModal
                 isOpen={showModal}
                 onClose={() => setShowModal(false)}
-                onSubmit={(data) => console.log("Lead captured:", data)}
-                dict={quizDict.results}
+                onSubmit={handleLeadSubmit}
+                dict={quizDict.results as Record<string, unknown>}
                 score={score}
             />
         </div>

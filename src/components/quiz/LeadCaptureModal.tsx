@@ -1,20 +1,29 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { CheckCircle2, ChevronRight, Mail, User, Building, Send } from "lucide-react";
+import { motion } from "framer-motion";
+import { CheckCircle2, Mail, User, Building, Send } from "lucide-react";
+
+interface LeadCaptureData {
+    name: string;
+    email: string;
+    company: string;
+    score: number;
+}
 
 interface LeadCaptureModalProps {
     isOpen: boolean;
     onClose: () => void;
-    onSubmit: (data: any) => void;
-    dict: any;
+    onSubmit: (data: LeadCaptureData) => void;
+    dict: Record<string, unknown>;
     score: number;
 }
 
 export default function LeadCaptureModal({ isOpen, onClose, onSubmit, dict, score }: LeadCaptureModalProps) {
     const [formData, setFormData] = useState({ name: "", email: "", company: "" });
     const [isSubmitted, setIsSubmitted] = useState(false);
+
+    const modal = dict.modal as Record<string, string>;
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -34,16 +43,15 @@ export default function LeadCaptureModal({ isOpen, onClose, onSubmit, dict, scor
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 className="bg-white w-full max-w-lg p-10 relative shadow-2xl overflow-hidden"
             >
-                {/* Subtle background decoration */}
                 <div className="absolute -top-24 -right-24 w-48 h-48 bg-secondary/10 rounded-full blur-3xl" />
 
                 {!isSubmitted ? (
                     <div className="relative z-10">
                         <h2 className="text-3xl font-serif text-primary mb-2 italic">
-                            {dict.modal.title}
+                            {modal.title}
                         </h2>
                         <p className="text-primary/60 mb-8 font-sans">
-                            {dict.modal.subtitle}
+                            {modal.subtitle}
                         </p>
 
                         <form onSubmit={handleSubmit} className="space-y-6">
@@ -52,7 +60,7 @@ export default function LeadCaptureModal({ isOpen, onClose, onSubmit, dict, scor
                                 <input
                                     type="text"
                                     required
-                                    placeholder={dict.modal.name}
+                                    placeholder={modal.name}
                                     className="w-full bg-primary/5 border-none px-12 py-4 text-primary placeholder:text-primary/30 outline-none ring-1 ring-primary/10 focus:ring-secondary transition-all"
                                     value={formData.name}
                                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -64,7 +72,7 @@ export default function LeadCaptureModal({ isOpen, onClose, onSubmit, dict, scor
                                 <input
                                     type="email"
                                     required
-                                    placeholder={dict.modal.email}
+                                    placeholder={modal.email}
                                     className="w-full bg-primary/5 border-none px-12 py-4 text-primary placeholder:text-primary/30 outline-none ring-1 ring-primary/10 focus:ring-secondary transition-all"
                                     value={formData.email}
                                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -76,7 +84,7 @@ export default function LeadCaptureModal({ isOpen, onClose, onSubmit, dict, scor
                                 <input
                                     type="text"
                                     required
-                                    placeholder={dict.modal.company}
+                                    placeholder={modal.company}
                                     className="w-full bg-primary/5 border-none px-12 py-4 text-primary placeholder:text-primary/30 outline-none ring-1 ring-primary/10 focus:ring-secondary transition-all"
                                     value={formData.company}
                                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
@@ -87,7 +95,7 @@ export default function LeadCaptureModal({ isOpen, onClose, onSubmit, dict, scor
                                 type="submit"
                                 className="w-full bg-primary text-secondary py-5 flex items-center justify-center gap-3 font-bold uppercase tracking-widest hover:bg-secondary hover:text-primary transition-all shadow-xl"
                             >
-                                {dict.modal.submit}
+                                {modal.submit}
                                 <Send className="w-4 h-4" />
                             </button>
                         </form>
@@ -102,7 +110,7 @@ export default function LeadCaptureModal({ isOpen, onClose, onSubmit, dict, scor
                             <CheckCircle2 className="w-10 h-10 text-secondary" />
                         </motion.div>
                         <h2 className="text-2xl font-serif text-primary italic mb-2">
-                            {dict.modal.success}
+                            {modal.success}
                         </h2>
                     </div>
                 )}

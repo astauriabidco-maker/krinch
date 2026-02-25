@@ -9,19 +9,19 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: any }) 
 
     const footerLinks = {
         expertise: [
-            { href: `/${locale}/services/rh`, label: locale === 'fr' ? "Conseil RH" : "HR Consulting" },
-            { href: `/${locale}/services/digital`, label: locale === 'fr' ? "Transformation Digitale" : "Digital Transformation" },
-            { href: `/${locale}/services/ia`, label: locale === 'fr' ? "IA & Data" : "AI & Data" },
+            { href: `/${locale}/services/rh`, label: dict.footer_labels.consulting },
+            { href: `/${locale}/services/digital`, label: dict.footer_labels.digital_transformation },
+            { href: `/${locale}/services/ia`, label: dict.footer_labels.ia_data },
         ],
         company: [
-            { href: `/${locale}/about`, label: locale === 'fr' ? "À propos" : "About Us" },
+            { href: `/${locale}/about`, label: dict.footer_labels.about },
             { href: `/${locale}/insights`, label: dict.nav.insights },
             { href: `/${locale}/careers`, label: dict.nav.careers },
             { href: `/${locale}/contact`, label: dict.nav.contact },
         ],
         legal: [
-            { href: `/${locale}/legal`, label: locale === 'fr' ? "Mentions Légales" : "Legal Notice" },
-            { href: `/${locale}/privacy`, label: locale === 'fr' ? "Confidentialité" : "Privacy Policy" },
+            { href: `/${locale}/legal`, label: dict.footer_labels.legal_notice },
+            { href: `/${locale}/privacy`, label: dict.footer_labels.privacy },
             {
                 href: "#",
                 label: dict.cookies.footer_link,
@@ -48,9 +48,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: any }) 
                             </span>
                         </Link>
                         <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-                            {locale === 'fr'
-                                ? "Cabinet de conseil RH & Transformation basé au Cameroun, accompagnant les organisations vers l'excellence internationale."
-                                : "HR & Transformation consulting firm based in Cameroon, supporting organizations towards international excellence."}
+                            {dict.footer_labels.description}
                         </p>
                     </div>
 
@@ -69,7 +67,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: any }) 
                     </div>
 
                     <div>
-                        <h4 className="text-secondary font-serif text-lg mb-6">{locale === 'fr' ? "Cabinet" : "Company"}</h4>
+                        <h4 className="text-secondary font-serif text-lg mb-6">{dict.footer_labels.company}</h4>
                         <ul className="space-y-4">
                             {footerLinks.company.map((link) => (
                                 <li key={link.href}>
@@ -82,7 +80,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: any }) 
                     </div>
 
                     <div>
-                        <h4 className="text-secondary font-serif text-lg mb-6">Contact</h4>
+                        <h4 className="text-secondary font-serif text-lg mb-6">{dict.footer_labels.contact}</h4>
                         <ul className="space-y-4 text-sm text-white/70 mb-8">
                             <li>Yaoundé, Cameroun</li>
                             <li>contact@krinchpartners.com</li>

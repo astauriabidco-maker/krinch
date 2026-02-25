@@ -45,13 +45,21 @@ export default function ExpertSection({ dict }: ExpertSectionProps) {
                             className="group"
                         >
                             <div className="relative aspect-[4/5] mb-8 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 bg-black/20">
-                                <Image
-                                    src={expert.image}
-                                    alt={`Portrait de ${expert.name}, Consultant RH Senior chez Krinch & Partners - Expert en ${expert.role} à Douala`}
-                                    fill
-                                    className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                                    loading="lazy"
-                                />
+                                {portraits[index] ? (
+                                    <Image
+                                        src={portraits[index]}
+                                        alt={`Portrait de ${expert.name}, Consultant RH Senior chez Krinch & Partners - Expert en ${expert.role} à Douala`}
+                                        fill
+                                        className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                                        loading="lazy"
+                                    />
+                                ) : (
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <span className="text-4xl font-serif text-secondary/30 font-bold">
+                                            {expert.name?.split(' ').map((n: string) => n[0]).join('')}
+                                        </span>
+                                    </div>
+                                )}
                                 <div className="absolute inset-0 border border-white/10 group-hover:border-secondary/40 transition-colors pointer-events-none" />
                             </div>
 

@@ -47,7 +47,7 @@ export default function ContactInfo({ dict }: ContactInfoProps) {
                         </div>
                         <div>
                             <p className="text-[10px] uppercase tracking-widest text-secondary font-bold mb-2">{i.phone_label}</p>
-                            <p className="text-lg font-serif">+237 6XX XXX XXX</p>
+                            <p className="text-lg font-serif">{i.phone_content || '+237 6XX XXX XXX'}</p>
                         </div>
                     </div>
 
@@ -65,13 +65,13 @@ export default function ContactInfo({ dict }: ContactInfoProps) {
                 <div className="mt-20 pt-10 border-t border-white/10">
                     <p className="text-[10px] uppercase tracking-widest text-white/40 font-bold mb-6">{i.social_label}</p>
                     <div className="flex gap-6">
-                        <a href="#" className="p-2 bg-white/5 hover:bg-white/10 text-white rounded-sm transition-all">
+                        <a href="https://www.linkedin.com/company/krinch-partners" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 hover:bg-white/10 text-white rounded-sm transition-all">
                             <Linkedin size={18} />
                         </a>
-                        <a href="#" className="p-2 bg-white/5 hover:bg-white/10 text-white rounded-sm transition-all">
+                        <a href="https://x.com/krinchpartners" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 hover:bg-white/10 text-white rounded-sm transition-all">
                             <Twitter size={18} />
                         </a>
-                        <a href="#" className="p-2 bg-white/5 hover:bg-white/10 text-white rounded-sm transition-all">
+                        <a href="https://www.facebook.com/krinchpartners" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 hover:bg-white/10 text-white rounded-sm transition-all">
                             <Facebook size={18} />
                         </a>
                     </div>

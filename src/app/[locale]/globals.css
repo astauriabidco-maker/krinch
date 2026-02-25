@@ -1,11 +1,14 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
-  --color-primary: #0F2A44; /* Bleu Nuit */
-  --color-secondary: #C9A24D; /* Or Doux */
+  --color-primary: #0F2A44;
+  /* Bleu Nuit */
+  --color-secondary: #C9A24D;
+  /* Or Doux */
   --color-accent: #1e3a5a;
-  
-  --font-serif: "Playfair Display", serif;
+
+  --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Inter", sans-serif;
 
   --color-background-light: #ffffff;
@@ -28,7 +31,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, .font-serif {
+h1,
+h2,
+h3,
+h4,
+.font-serif {
   font-family: var(--font-serif);
 }
 

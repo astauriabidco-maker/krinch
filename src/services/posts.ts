@@ -1,5 +1,5 @@
-import { db } from '../lib/db';
-import { BlogPostSchema } from '../lib/schemas';
+import { db } from '@/lib/db';
+import { BlogPostSchema } from '@/lib/schemas';
 import { z } from 'zod';
 
 export type CreatePostDTO = z.infer<typeof BlogPostSchema>;
@@ -8,9 +8,9 @@ export type CreatePostDTO = z.infer<typeof BlogPostSchema>;
  * Récupère les articles avec optimisation linguistique.
  * Si une locale est fournie, retourne une structure aplatie simplifiée.
  */
-export async function getPosts(locale?: string) {
+export async function getPosts(locale?: string, includeDrafts: boolean = false) {
     const posts = await db.blogPost.findMany({
-        where: { published: true },
+        where: includeDrafts ? {} : { published: true },
         orderBy: { publishedAt: 'desc' },
     });
 
@@ -54,5 +54,21 @@ export async function getPostBySlug(slug: string) {
 export async function getPostById(id: string) {
     return await db.blogPost.findUnique({
         where: { id }
+    });
+}
+
+export async function deletePost(id: string) {
+    return await db.blogPost.delete({
+        where: { id }
+    });
+}
+
+export async function togglePostPublished(id: string, published: boolean) {
+    return await db.blogPost.update({
+        where: { id },
+        data: {
+            published,
+            publishedAt: published ? new Date() : null
+        }
     });
 }

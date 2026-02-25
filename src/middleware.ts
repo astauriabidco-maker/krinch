@@ -1,5 +1,4 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/request'
+import { NextResponse, type NextRequest } from 'next/server'
 
 const locales = ['fr', 'en']
 const defaultLocale = 'fr'

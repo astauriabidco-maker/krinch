@@ -1,19 +1,23 @@
 import { getDictionary, Locale } from "@/lib/i18n/get-dictionary";
+import { getPosts } from "@/services/posts";
 import HomePage from "@/components/home/HomePage";
 import type { Metadata } from "next";
+
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   return {
-    title: dict.hero.title,
-    description: dict.hero.subtitle,
+    title: dict.hero?.slides?.[0]?.title || "Krinch & Partners",
+    description: dict.hero?.slides?.[0]?.subtitle || "",
   };
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
+  const articles = await getPosts(locale);
 
-  return <HomePage dict={dict} locale={locale} />;
+  return <HomePage dict={dict} locale={locale} articles={articles} />;
 }

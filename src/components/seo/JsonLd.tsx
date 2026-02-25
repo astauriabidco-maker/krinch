@@ -54,11 +54,11 @@ export default function JsonLd() {
                 "name": "Cameroon"
             },
             {
-                "@type": "Region",
+                "@type": "AdministrativeArea",
                 "name": "Central Africa"
             },
             {
-                "@type": "Region",
+                "@type": "AdministrativeArea",
                 "name": "International"
             }
         ],

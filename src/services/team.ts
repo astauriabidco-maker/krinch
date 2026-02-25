@@ -1,5 +1,5 @@
-import { db } from '../lib/db';
-import { TeamMemberSchema } from '../lib/schemas';
+import { db } from '@/lib/db';
+import { TeamMemberSchema } from '@/lib/schemas';
 import { z } from 'zod';
 
 export type TeamMemberDTO = z.infer<typeof TeamMemberSchema>;

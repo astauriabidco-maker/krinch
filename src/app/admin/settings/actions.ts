@@ -1,47 +1,63 @@
 'use server';
 
 import { db } from '@/lib/db';
+import { requireAdmin } from '@/lib/security';
 import { revalidatePath } from 'next/cache';
 import fs from 'fs';
 import path from 'path';
+import { z } from 'zod';
 
-export async function updateSettingsAction(formData: any) {
+const SiteSettingsSchema = z.object({
+    siteName: z.string().min(1),
+    contactEmail: z.string().email(),
+    contactPhone: z.string().optional(),
+    addressFr: z.string().optional(),
+    addressEn: z.string().optional(),
+});
+
+export async function updateSettingsAction(formData: z.infer<typeof SiteSettingsSchema>) {
     try {
+        await requireAdmin();
+
+        const validated = SiteSettingsSchema.parse(formData);
         const settings = await db.siteSettings.findFirst();
 
         if (settings) {
             await db.siteSettings.update({
                 where: { id: settings.id },
                 data: {
-                    siteName: formData.siteName,
-                    contactEmail: formData.contactEmail,
-                    contactPhone: formData.contactPhone,
-                    addressFr: formData.addressFr,
-                    addressEn: formData.addressEn,
+                    siteName: validated.siteName,
+                    contactEmail: validated.contactEmail,
+                    contactPhone: validated.contactPhone,
+                    addressFr: validated.addressFr,
+                    addressEn: validated.addressEn,
                 }
             });
         } else {
             await db.siteSettings.create({
                 data: {
-                    siteName: formData.siteName,
-                    contactEmail: formData.contactEmail,
-                    contactPhone: formData.contactPhone,
-                    addressFr: formData.addressFr,
-                    addressEn: formData.addressEn,
+                    siteName: validated.siteName,
+                    contactEmail: validated.contactEmail,
+                    contactPhone: validated.contactPhone,
+                    addressFr: validated.addressFr,
+                    addressEn: validated.addressEn,
                 }
             });
         }
 
         revalidatePath('/admin/settings');
         return { success: true };
-    } catch (error) {
+    } catch (error: unknown) {
         console.error("Failed to update settings:", error);
-        return { success: false, error: "Erreur lors de la mise à jour des paramètres" };
+        const message = error instanceof Error ? error.message : "Erreur lors de la mise à jour des paramètres";
+        return { success: false, error: message };
     }
 }
 
 export async function createBackupAction() {
     try {
+        await requireAdmin();
+
         const dbPath = path.resolve(process.cwd(), 'prisma', 'dev.db');
         const backupDir = path.resolve(process.cwd(), 'prisma', 'backups');
 
@@ -54,10 +70,10 @@ export async function createBackupAction() {
 
         fs.copyFileSync(dbPath, backupPath);
 
-        console.log(`Backup created at: ${backupPath}`);
         return { success: true, path: backupPath };
-    } catch (error) {
+    } catch (error: unknown) {
         console.error("Backup failed:", error);
-        return { success: false, error: "Erreur lors de la création de la sauvegarde" };
+        const message = error instanceof Error ? error.message : "Erreur lors de la création de la sauvegarde";
+        return { success: false, error: message };
     }
 }

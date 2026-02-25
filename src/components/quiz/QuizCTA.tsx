@@ -13,7 +13,7 @@ export default function QuizCTA({ locale, dict }: { locale: string; dict: any })
                     <div className="text-left space-y-6 max-w-xl">
                         <div className="flex items-center gap-4 text-secondary">
                             <BrainCircuit className="w-8 h-8" />
-                            <span className="text-[10px] font-bold uppercase tracking-[0.3em]">Outil d'Auto-Diagnostic</span>
+                            <span className="text-[10px] font-bold uppercase tracking-[0.3em]">{dict.quiz_cta.badge}</span>
                         </div>
                         <h2 className="text-3xl md:text-4xl font-serif text-white leading-tight italic">
                             {dict.quiz.title}

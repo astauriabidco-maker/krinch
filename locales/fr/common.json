@@ -15,21 +15,158 @@
         "discover": "Découvrir nos solutions"
     },
     "hero": {
-        "title": "Cabinet de Conseil RH & Transformation au Cameroun",
-        "subtitle": "Bâtir l'avenir des organisations en Afrique avec excellence, sobriété et crédibilité.",
-        "cta": "Contactez nos experts",
-        "secondary_cta": "Consultant RH Douala",
-        "promise": "Une ambition internationale, un ancrage local fort au Cameroun."
+        "slides": [
+            {
+                "badge": "Une ambition internationale, un ancrage local fort au Cameroun.",
+                "title": "Digital & IA RH",
+                "subtitle": "L'innovation technologique au service de l'excellence humaine.",
+                "cta": "Contactez nos experts",
+                "secondary_cta": "Consultant RH Douala",
+                "image": "/images/hero_premium.png"
+            },
+            {
+                "badge": "Cas de Transformation — PME Logistique, Douala",
+                "title": "Turnover de 45% réduit à 12%",
+                "subtitle": "Audit RH complet, grille salariale compétitive et programme d'intégration. Résultat : -60% de coûts de recrutement en 6 mois.",
+                "cta": "Découvrir nos solutions RH",
+                "secondary_cta": "Parler à un expert",
+                "image": "/images/slide_logistics.png"
+            },
+            {
+                "badge": "Cas de Transformation — Banque Régionale, Yaoundé",
+                "title": "3 semaines → 2 heures",
+                "subtitle": "Digitalisation SIRH complète : 12 processus RH automatisés, 45 utilisateurs formés, +85% de productivité.",
+                "cta": "Explorer nos solutions digitales",
+                "secondary_cta": "Voir nos cas clients",
+                "image": "/images/slide_bank.png"
+            },
+            {
+                "badge": "Cas de Transformation — Groupe Industriel, Zone CEMAC",
+                "title": "0% de départ de talents clés",
+                "subtitle": "Fusion de 3 entités accompagnée en 6 mois : diagnostic culturel, plan de rétention, programme de leadership.",
+                "cta": "Découvrir notre approche",
+                "secondary_cta": "Nous contacter",
+                "image": "/images/slide_industry.png"
+            }
+        ],
+        "tag_consulting": "Conseil Stratégique RH",
+        "tag_data": "Master Data Management"
+    },
+    "metrics": {
+        "badge": "Nos Chiffres Clés",
+        "items": [
+            {
+                "value": "150",
+                "suffix": "+",
+                "label": "Projets accompagnés",
+                "desc": "depuis notre création"
+            },
+            {
+                "value": "12",
+                "suffix": "",
+                "label": "Années d'expertise",
+                "desc": "en conseil RH en Afrique"
+            },
+            {
+                "value": "35",
+                "suffix": "+",
+                "label": "Organisations transformées",
+                "desc": "dans 8 pays du continent"
+            },
+            {
+                "value": "98",
+                "suffix": "%",
+                "label": "Taux de satisfaction",
+                "desc": "de nos clients partenaires"
+            }
+        ]
     },
     "promise": {
+        "badge": "Notre Engagement",
         "title": "Audit & Accompagnement RH Cameroun",
         "subtitle": "Nous accompagnons la transformation durable des organisations à travers une approche rigoureuse, pragmatique et adaptée au marché africain.",
         "combination_title": "Nos piliers d'excellence :",
+        "motto": "Excellence • Sobriété",
         "items": [
             "Expertise stratégique RH de haut niveau",
             "Ancrage profond dans les réalités de Douala et Yaoundé",
             "Sobriété opérationnelle et expertise IA RH Afrique",
             "Engagement pour une performance durable"
+        ]
+    },
+    "transformations": {
+        "badge": "Cas de Transformation",
+        "title": "Des résultats concrets, pas des promesses",
+        "subtitle": "Chaque mission est une histoire de transformation mesurable. Voici comment nous avons aidé des entreprises africaines à franchir un cap décisif.",
+        "before_label": "Avant",
+        "after_label": "Après",
+        "challenge_label": "Défi",
+        "solution_label": "Notre intervention",
+        "results_label": "Résultats",
+        "cases": [
+            {
+                "sector": "PME Logistique — Douala",
+                "challenge": "Turnover de 45% sur les postes opérationnels, recrutements en urgence permanente, aucun processus RH structuré.",
+                "solution": "Audit RH complet, mise en place d'une grille salariale compétitive, programme d'intégration et tableaux de bord RH.",
+                "results": [
+                    {
+                        "metric": "45% → 12%",
+                        "label": "Turnover en 6 mois"
+                    },
+                    {
+                        "metric": "-60%",
+                        "label": "Coûts de recrutement"
+                    },
+                    {
+                        "metric": "4.2/5",
+                        "label": "Satisfaction employés"
+                    }
+                ],
+                "quote": "Krinch a transformé notre gestion RH. On ne recrute plus dans l'urgence, on anticipe.",
+                "author": "DG, entreprise de transport et logistique"
+            },
+            {
+                "sector": "Banque Régionale — Yaoundé",
+                "challenge": "Processus RH 100% papier, 3 semaines pour traiter une demande de congé, données employés dispersées dans des fichiers Excel.",
+                "solution": "Sélection et déploiement d'un SIRH adapté, digitalisation de 12 processus RH, formation de 45 utilisateurs.",
+                "results": [
+                    {
+                        "metric": "3 sem. → 2h",
+                        "label": "Traitement des demandes"
+                    },
+                    {
+                        "metric": "12",
+                        "label": "Processus digitalisés"
+                    },
+                    {
+                        "metric": "+85%",
+                        "label": "Productivité RH"
+                    }
+                ],
+                "quote": "La digitalisation avec Krinch nous a fait gagner l'équivalent de 2 postes à temps plein.",
+                "author": "DRH, institution bancaire régionale"
+            },
+            {
+                "sector": "Groupe Industriel — Zone CEMAC",
+                "challenge": "Fusion de 3 entités, 3 cultures d'entreprise différentes, conflits internes, perte de talents clés post-fusion.",
+                "solution": "Diagnostic culturel, plan de rétention ciblé, harmonisation des politiques RH, programme de leadership pour les managers.",
+                "results": [
+                    {
+                        "metric": "0%",
+                        "label": "Départs de talents clés"
+                    },
+                    {
+                        "metric": "+30%",
+                        "label": "Engagement collaborateurs"
+                    },
+                    {
+                        "metric": "6 mois",
+                        "label": "Intégration complète"
+                    }
+                ],
+                "quote": "Sans Krinch, notre fusion aurait pris 2 ans. Ils ont aligné nos équipes en 6 mois.",
+                "author": "PDG, groupe industriel multi-sites"
+            }
         ]
     },
     "why_us": {
@@ -70,8 +207,9 @@
         "button": "Contactez nos experts dès aujourd'hui"
     },
     "services": {
-        "title": "Expertise RH & Transformation des Organisations",
-        "subtitle": "Accompagner votre croissance au Cameroun et à l'international grâce à des solutions innovantes.",
+        "badge": "Nos Expertises",
+        "title": "Des solutions agiles pour des organisations d'exception",
+        "subtitle": "Nous combinons profondeur analytique et pragmatisme opérationnel pour transformer vos défis en leviers de croissance.",
         "rh": {
             "title": "Conseil RH Stratégique",
             "desc": "Optimisation du capital humain, gestion des talents et audit RH Cameroun."
@@ -137,5 +275,25 @@
         "description": "Recevez nos analyses exclusives sur la transformation RH en Afrique.",
         "placeholder": "Votre adresse email",
         "button": "S'abonner"
+    },
+    "insights_preview": {
+        "badge": "Leadership d'Opinion",
+        "title": "Nos dernières analyses & réflexions stratégiques",
+        "see_all": "Voir tous les insights"
+    },
+    "quiz_cta": {
+        "badge": "Outil d'Auto-Diagnostic"
+    },
+    "footer_labels": {
+        "expertise": "Expertise",
+        "company": "Cabinet",
+        "contact": "Contact",
+        "description": "Cabinet de conseil RH & Transformation basé au Cameroun, accompagnant les organisations vers l'excellence internationale.",
+        "consulting": "Conseil RH",
+        "digital_transformation": "Transformation Digitale",
+        "ia_data": "IA & Data",
+        "about": "À propos",
+        "legal_notice": "Mentions Légales",
+        "privacy": "Confidentialité"
     }
 }

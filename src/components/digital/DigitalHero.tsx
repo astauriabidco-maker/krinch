@@ -12,12 +12,12 @@ export default function DigitalHero({ dict }: DigitalHeroProps) {
                     <div className="animate-fade-in-up">
                         <h1 className="text-4xl md:text-7xl font-serif mb-8 leading-tight">
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#0F2A44] to-[#1E4D7B]">
-                                {dict.hero.title}
+                                {dict.digital_hero.title}
                             </span>
                         </h1>
                         <div className="w-20 h-1 bg-secondary mb-12" />
                         <p className="text-xl text-primary/70 leading-relaxed max-w-xl font-serif italic">
-                            {dict.hero.subtitle}
+                            {dict.digital_hero.subtitle}
                         </p>
                     </div>
 

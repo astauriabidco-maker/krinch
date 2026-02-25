@@ -1,4 +1,8 @@
-export function downloadAsCSV(data: any[], filename: string) {
+interface CsvRow {
+    [key: string]: string | number | boolean | Date | object | null | undefined;
+}
+
+export function downloadAsCSV(data: CsvRow[], filename: string) {
     if (!data || !data.length) {
         console.warn("No data to export");
         return;
@@ -7,17 +11,14 @@ export function downloadAsCSV(data: any[], filename: string) {
     const separator = ',';
     const keys = Object.keys(data[0]);
 
-    // Header Row
     const csvContent = [
         keys.join(separator),
         ...data.map(row =>
             keys.map(key => {
                 let val = row[key];
-                // Escape quotes
                 if (typeof val === 'string') {
                     val = `"${val.replace(/"/g, '""')}"`;
                 }
-                // Handle dates/objects
                 if (val instanceof Date) val = val.toISOString();
                 if (typeof val === 'object' && val !== null) val = JSON.stringify(val).replace(/"/g, '""');
                 return val ?? '';

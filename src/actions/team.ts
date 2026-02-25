@@ -1,11 +1,14 @@
 'use server'
 
-import { createTeamMember, updateTeamMember, deleteTeamMember } from '../services/team';
-import { requireAdmin } from '../lib/security';
+import { createTeamMember, updateTeamMember, deleteTeamMember } from '@/services/team';
+import { requireAdmin } from '@/lib/security';
 import { revalidatePath } from 'next/cache';
-import { TeamMemberSchema } from '../lib/schemas';
+import { TeamMemberSchema } from '@/lib/schemas';
+import { z } from 'zod';
 
-export async function createTeamMemberAction(data: any) {
+type TeamMemberInput = z.infer<typeof TeamMemberSchema>;
+
+export async function createTeamMemberAction(data: TeamMemberInput) {
     try {
         await requireAdmin();
         const validated = TeamMemberSchema.parse(data);
@@ -13,12 +16,13 @@ export async function createTeamMemberAction(data: any) {
         revalidatePath('/admin/team');
         revalidatePath('/about');
         return { success: true };
-    } catch (e: any) {
-        return { success: false, error: e.message };
+    } catch (e: unknown) {
+        const message = e instanceof Error ? e.message : 'Erreur inconnue';
+        return { success: false, error: message };
     }
 }
 
-export async function updateTeamMemberAction(id: string, data: any) {
+export async function updateTeamMemberAction(id: string, data: Partial<TeamMemberInput>) {
     try {
         await requireAdmin();
         const validated = TeamMemberSchema.parse(data);
@@ -26,8 +30,9 @@ export async function updateTeamMemberAction(id: string, data: any) {
         revalidatePath('/admin/team');
         revalidatePath('/about');
         return { success: true };
-    } catch (e: any) {
-        return { success: false, error: e.message };
+    } catch (e: unknown) {
+        const message = e instanceof Error ? e.message : 'Erreur inconnue';
+        return { success: false, error: message };
     }
 }
 
@@ -38,7 +43,8 @@ export async function deleteTeamMemberAction(id: string) {
         revalidatePath('/admin/team');
         revalidatePath('/about');
         return { success: true };
-    } catch (e: any) {
-        return { success: false, error: e.message };
+    } catch (e: unknown) {
+        const message = e instanceof Error ? e.message : 'Erreur inconnue';
+        return { success: false, error: message };
     }
 }

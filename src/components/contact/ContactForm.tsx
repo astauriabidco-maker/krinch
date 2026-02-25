@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CheckCircle2, ChevronDown, Send } from "lucide-react";
+import { submitContactAction } from "@/actions/contact";
 
 interface ContactFormProps {
     dict: any;
@@ -12,14 +13,32 @@ export default function ContactForm({ dict }: ContactFormProps) {
     const [loading, setLoading] = useState(false);
     const f = dict.contact_page.form;
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const [formData, setFormData] = useState({
+        name: '',
+        role: '',
+        company: '',
+        email: '',
+        subject: '',
+        companySize: '',
+        message: '',
+        newsletter: false,
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        const value = e.target.type === 'checkbox' ? (e.target as HTMLInputElement).checked : e.target.value;
+        setFormData({ ...formData, [e.target.name]: value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setLoading(true);
-        // Simulate API call
-        setTimeout(() => {
-            setLoading(false);
+
+        const result = await submitContactAction(formData);
+
+        if (result.success) {
             setSubmitted(true);
-        }, 1500);
+        }
+        setLoading(false);
     };
 
     if (submitted) {
@@ -35,7 +54,10 @@ export default function ContactForm({ dict }: ContactFormProps) {
                     {f.success}
                 </p>
                 <button
-                    onClick={() => setSubmitted(false)}
+                    onClick={() => {
+                        setSubmitted(false);
+                        setFormData({ name: '', role: '', company: '', email: '', subject: '', companySize: '', message: '', newsletter: false });
+                    }}
                     className="text-xs font-bold uppercase tracking-widest text-primary border-b border-primary pb-2 hover:text-secondary hover:border-secondary transition-all"
                 >
                     Send another message
@@ -56,7 +78,10 @@ export default function ContactForm({ dict }: ContactFormProps) {
                         <div className="relative group">
                             <input
                                 type="text"
+                                name="name"
                                 required
+                                value={formData.name}
+                                onChange={handleChange}
                                 className="w-full bg-transparent border-b border-gray-100 py-3 text-sm focus:border-primary outline-none transition-all peer"
                                 placeholder=" "
                             />
@@ -67,7 +92,9 @@ export default function ContactForm({ dict }: ContactFormProps) {
                         <div className="relative group">
                             <input
                                 type="text"
-                                required
+                                name="role"
+                                value={formData.role}
+                                onChange={handleChange}
                                 className="w-full bg-transparent border-b border-gray-100 py-3 text-sm focus:border-primary outline-none transition-all peer"
                                 placeholder=" "
                             />
@@ -81,7 +108,9 @@ export default function ContactForm({ dict }: ContactFormProps) {
                         <div className="relative group">
                             <input
                                 type="text"
-                                required
+                                name="company"
+                                value={formData.company}
+                                onChange={handleChange}
                                 className="w-full bg-transparent border-b border-gray-100 py-3 text-sm focus:border-primary outline-none transition-all peer"
                                 placeholder=" "
                             />
@@ -92,7 +121,10 @@ export default function ContactForm({ dict }: ContactFormProps) {
                         <div className="relative group">
                             <input
                                 type="email"
+                                name="email"
                                 required
+                                value={formData.email}
+                                onChange={handleChange}
                                 className="w-full bg-transparent border-b border-gray-100 py-3 text-sm focus:border-primary outline-none transition-all peer"
                                 placeholder=" "
                             />
@@ -104,7 +136,12 @@ export default function ContactForm({ dict }: ContactFormProps) {
 
                     <div className="grid md:grid-cols-2 gap-10">
                         <div className="relative group">
-                            <select className="w-full bg-transparent border-b border-gray-100 py-3 text-sm focus:border-primary outline-none transition-all appearance-none cursor-pointer">
+                            <select
+                                name="subject"
+                                value={formData.subject}
+                                onChange={handleChange}
+                                className="w-full bg-transparent border-b border-gray-100 py-3 text-sm focus:border-primary outline-none transition-all appearance-none cursor-pointer"
+                            >
                                 {f.subjects.map((sub: string, idx: number) => (
                                     <option key={idx} value={sub}>{sub}</option>
                                 ))}
@@ -117,7 +154,12 @@ export default function ContactForm({ dict }: ContactFormProps) {
                             </div>
                         </div>
                         <div className="relative group">
-                            <select className="w-full bg-transparent border-b border-gray-100 py-3 text-sm focus:border-primary outline-none transition-all appearance-none cursor-pointer">
+                            <select
+                                name="companySize"
+                                value={formData.companySize}
+                                onChange={handleChange}
+                                className="w-full bg-transparent border-b border-gray-100 py-3 text-sm focus:border-primary outline-none transition-all appearance-none cursor-pointer"
+                            >
                                 {f.sizes.map((s: string, idx: number) => (
                                     <option key={idx} value={s}>{s}</option>
                                 ))}
@@ -133,8 +175,11 @@ export default function ContactForm({ dict }: ContactFormProps) {
 
                     <div className="relative group">
                         <textarea
+                            name="message"
                             rows={4}
                             required
+                            value={formData.message}
+                            onChange={handleChange}
                             className="w-full bg-transparent border-b border-gray-100 py-3 text-sm focus:border-primary outline-none transition-all peer resize-none"
                             placeholder=" "
                         />
@@ -144,7 +189,14 @@ export default function ContactForm({ dict }: ContactFormProps) {
                     </div>
 
                     <div className="flex items-center gap-4 py-4">
-                        <input type="checkbox" id="newsletter" className="w-4 h-4 rounded border-gray-200 text-secondary focus:ring-secondary cursor-pointer" />
+                        <input
+                            type="checkbox"
+                            id="newsletter"
+                            name="newsletter"
+                            checked={formData.newsletter}
+                            onChange={handleChange}
+                            className="w-4 h-4 rounded border-gray-200 text-secondary focus:ring-secondary cursor-pointer"
+                        />
                         <label htmlFor="newsletter" className="text-xs text-primary/60 cursor-pointer">
                             {f.fields.opt_in}
                         </label>

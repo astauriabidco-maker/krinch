@@ -15,21 +15,158 @@
         "discover": "Discover our solutions"
     },
     "hero": {
-        "title": "HR Consulting & Organizational Transformation in Cameroon",
-        "subtitle": "Building the future of organizations in Africa with excellence, sobriety, and credibility.",
-        "cta": "Contact our experts",
-        "secondary_cta": "HR Consultant Douala",
-        "promise": "International ambition, deep local roots in Cameroon."
+        "slides": [
+            {
+                "badge": "International ambition, deep local roots in Cameroon.",
+                "title": "Digital & HR AI",
+                "subtitle": "Technological innovation at the service of human excellence.",
+                "cta": "Contact our experts",
+                "secondary_cta": "HR Consultant Douala",
+                "image": "/images/hero_premium.png"
+            },
+            {
+                "badge": "Transformation Case — Logistics SME, Douala",
+                "title": "Turnover from 45% down to 12%",
+                "subtitle": "Complete HR audit, competitive salary grid and onboarding program. Result: -60% recruitment costs in 6 months.",
+                "cta": "Discover our HR solutions",
+                "secondary_cta": "Talk to an expert",
+                "image": "/images/slide_logistics.png"
+            },
+            {
+                "badge": "Transformation Case — Regional Bank, Yaoundé",
+                "title": "3 weeks → 2 hours",
+                "subtitle": "Full HRIS digitalization: 12 HR processes automated, 45 users trained, +85% productivity.",
+                "cta": "Explore our digital solutions",
+                "secondary_cta": "View our case studies",
+                "image": "/images/slide_bank.png"
+            },
+            {
+                "badge": "Transformation Case — Industrial Group, CEMAC Zone",
+                "title": "0% key talent departures",
+                "subtitle": "3-entity merger managed in 6 months: cultural diagnostic, retention plan, leadership program.",
+                "cta": "Discover our approach",
+                "secondary_cta": "Contact us",
+                "image": "/images/slide_industry.png"
+            }
+        ],
+        "tag_consulting": "Strategic HR Consulting",
+        "tag_data": "Master Data Management"
+    },
+    "metrics": {
+        "badge": "Key Figures",
+        "items": [
+            {
+                "value": "150",
+                "suffix": "+",
+                "label": "Projects delivered",
+                "desc": "since our founding"
+            },
+            {
+                "value": "12",
+                "suffix": "",
+                "label": "Years of expertise",
+                "desc": "in HR consulting across Africa"
+            },
+            {
+                "value": "35",
+                "suffix": "+",
+                "label": "Organizations transformed",
+                "desc": "across 8 countries on the continent"
+            },
+            {
+                "value": "98",
+                "suffix": "%",
+                "label": "Client satisfaction rate",
+                "desc": "from our partner clients"
+            }
+        ]
     },
     "promise": {
+        "badge": "Our Commitment",
         "title": "HR Audit & Strategy Cameroon",
         "subtitle": "We support the sustainable transformation of organizations through a rigorous, pragmatic approach tailored to the African market.",
         "combination_title": "Our pillars of excellence:",
+        "motto": "Excellence • Sobriety",
         "items": [
             "High-level strategic HR expertise",
             "Deep roots in Douala and Yaoundé business realities",
             "Operational sobriety and AI in HR Africa expertise",
             "Commitment to sustainable performance"
+        ]
+    },
+    "transformations": {
+        "badge": "Transformation Cases",
+        "title": "Concrete results, not just promises",
+        "subtitle": "Every engagement is a story of measurable transformation. Here's how we helped African businesses reach a decisive turning point.",
+        "before_label": "Before",
+        "after_label": "After",
+        "challenge_label": "Challenge",
+        "solution_label": "Our intervention",
+        "results_label": "Results",
+        "cases": [
+            {
+                "sector": "Logistics SME — Douala",
+                "challenge": "45% turnover on operational roles, constant emergency hiring, no structured HR processes.",
+                "solution": "Comprehensive HR audit, competitive salary grid, onboarding program, and HR dashboards.",
+                "results": [
+                    {
+                        "metric": "45% → 12%",
+                        "label": "Turnover in 6 months"
+                    },
+                    {
+                        "metric": "-60%",
+                        "label": "Recruitment costs"
+                    },
+                    {
+                        "metric": "4.2/5",
+                        "label": "Employee satisfaction"
+                    }
+                ],
+                "quote": "Krinch transformed our HR management. We no longer hire in panic mode — we anticipate.",
+                "author": "CEO, transport and logistics company"
+            },
+            {
+                "sector": "Regional Bank — Yaoundé",
+                "challenge": "100% paper-based HR processes, 3 weeks to process a leave request, employee data scattered across Excel files.",
+                "solution": "Selection and deployment of a tailored HRIS, digitalization of 12 HR processes, training of 45 users.",
+                "results": [
+                    {
+                        "metric": "3 wks → 2h",
+                        "label": "Request processing"
+                    },
+                    {
+                        "metric": "12",
+                        "label": "Digitalized processes"
+                    },
+                    {
+                        "metric": "+85%",
+                        "label": "HR productivity"
+                    }
+                ],
+                "quote": "Digitalization with Krinch saved us the equivalent of 2 full-time positions.",
+                "author": "CHRO, regional banking institution"
+            },
+            {
+                "sector": "Industrial Group — CEMAC Zone",
+                "challenge": "Merger of 3 entities, 3 different corporate cultures, internal conflicts, loss of key talent post-merger.",
+                "solution": "Cultural diagnostic, targeted retention plan, HR policy harmonization, leadership program for managers.",
+                "results": [
+                    {
+                        "metric": "0%",
+                        "label": "Key talent departures"
+                    },
+                    {
+                        "metric": "+30%",
+                        "label": "Employee engagement"
+                    },
+                    {
+                        "metric": "6 months",
+                        "label": "Full integration"
+                    }
+                ],
+                "quote": "Without Krinch, our merger would have taken 2 years. They aligned our teams in 6 months.",
+                "author": "CEO, multi-site industrial group"
+            }
         ]
     },
     "why_us": {
@@ -70,8 +207,9 @@
         "button": "Get in touch with our experts today"
     },
     "services": {
-        "title": "HR Advisory & Organizational Transformation",
-        "subtitle": "Supporting your growth in Cameroon and internationally through bespoke solutions.",
+        "badge": "Our Expertise",
+        "title": "Agile solutions for exceptional organizations",
+        "subtitle": "We combine analytical depth and operational pragmatism to turn your challenges into growth levers.",
         "rh": {
             "title": "Strategic HR Consulting",
             "desc": "Human capital optimization, talent management, and HR Audit Cameroon."
@@ -137,5 +275,25 @@
         "description": "Get our exclusive insights on HR transformation in Africa.",
         "placeholder": "Your email address",
         "button": "Subscribe"
+    },
+    "insights_preview": {
+        "badge": "Thought Leadership",
+        "title": "Our latest analyses & strategic insights",
+        "see_all": "View all insights"
+    },
+    "quiz_cta": {
+        "badge": "Self-Assessment Tool"
+    },
+    "footer_labels": {
+        "expertise": "Expertise",
+        "company": "Company",
+        "contact": "Contact",
+        "description": "HR & Transformation consulting firm based in Cameroon, supporting organizations towards international excellence.",
+        "consulting": "HR Consulting",
+        "digital_transformation": "Digital Transformation",
+        "ia_data": "AI & Data",
+        "about": "About Us",
+        "legal_notice": "Legal Notice",
+        "privacy": "Privacy Policy"
     }
 }

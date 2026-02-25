@@ -60,7 +60,7 @@ export default function CookieConsent({ locale, dict }: CookieConsentProps) {
 
         // Here you would trigger actual script loading/blocking
         if (newState.analytics) {
-            console.log("Loading Analytics scripts...");
+            // TODO [PROD]: Load analytics scripts (Google Analytics, Plausible, etc.)
         }
     };
 

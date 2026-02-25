@@ -1,8 +1,11 @@
+import Link from "next/link";
+
 interface FinalCTAProps {
     dict: any;
+    locale: string;
 }
 
-export default function FinalCTA({ dict }: FinalCTAProps) {
+export default function FinalCTA({ dict, locale }: FinalCTAProps) {
     return (
         <section className="py-24 bg-primary relative overflow-hidden">
             {/* Subtle patterns */}
@@ -16,9 +19,12 @@ export default function FinalCTA({ dict }: FinalCTAProps) {
                         {dict.final_cta.text}
                     </h2>
 
-                    <button className="bg-secondary text-primary px-12 py-6 text-sm font-bold uppercase tracking-[0.2em] hover:bg-white transition-all shadow-2xl hover:-translate-y-1">
+                    <Link
+                        href={`/${locale}/contact`}
+                        className="inline-block bg-secondary text-primary px-12 py-6 text-sm font-bold uppercase tracking-[0.2em] hover:bg-white transition-all shadow-2xl hover:-translate-y-1"
+                    >
                         {dict.final_cta.button}
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>

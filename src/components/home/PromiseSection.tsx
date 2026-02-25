@@ -1,4 +1,4 @@
-import { LucideIcon } from "lucide-react";
+import Image from "next/image";
 import Reveal from "@/components/ui/Reveal";
 
 interface PromiseSectionProps {
@@ -13,7 +13,7 @@ export default function PromiseSection({ dict }: PromiseSectionProps) {
                     <Reveal width="100%">
                         <div className="inline-block px-4 py-1.5 bg-secondary/10 mb-6 rounded-sm border border-secondary/20">
                             <span className="text-secondary text-xs font-bold uppercase tracking-[0.2em] leading-none">
-                                Notre Engagement
+                                {dict.promise.badge}
                             </span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-serif text-primary mb-8 leading-tight">
@@ -40,17 +40,29 @@ export default function PromiseSection({ dict }: PromiseSectionProps) {
 
                     <div className="relative">
                         <div className="absolute inset-0 bg-secondary/5 -skew-x-12 translate-x-12 translate-y-12 -z-10" />
-                        <div className="aspect-[4/3] bg-primary relative overflow-hidden shadow-2xl">
-                            {/* Decorative element instead of a second large image */}
-                            <div className="absolute inset-0 flex items-center justify-center p-12">
-                                <div className="text-center">
-                                    <div className="text-6xl font-serif text-secondary/30 mb-4 font-bold">K&P</div>
-                                    <div className="w-12 h-px bg-secondary mx-auto mb-4" />
-                                    <div className="text-white/40 text-xs font-bold uppercase tracking-[0.4em]">Excellence • Sobriété</div>
+                        <div className="aspect-[4/3] relative overflow-hidden shadow-2xl group">
+                            <Image
+                                src="/images/promise_team.png"
+                                alt="Équipe de consultants Krinch & Partners en réunion stratégique"
+                                fill
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                            {/* Gradient overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
+
+                            {/* Motto overlay at bottom */}
+                            <div className="absolute bottom-0 left-0 right-0 p-8">
+                                <div className="flex items-center gap-4">
+                                    <div className="w-10 h-px bg-secondary" />
+                                    <span className="text-white/70 text-xs font-bold uppercase tracking-[0.4em]">
+                                        {dict.promise.motto}
+                                    </span>
                                 </div>
                             </div>
-                            <div className="absolute bottom-0 right-0 p-8">
-                                <div className="text-secondary text-8xl font-serif opacity-10">“</div>
+
+                            {/* Decorative quote */}
+                            <div className="absolute top-6 right-6">
+                                <div className="text-secondary text-6xl font-serif opacity-20 leading-none">"</div>
                             </div>
                         </div>
                     </div>
