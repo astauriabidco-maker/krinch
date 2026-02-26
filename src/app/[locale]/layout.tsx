@@ -45,6 +45,7 @@ export const metadata: Metadata = {
 };
 
 import { db } from "@/lib/db";
+import { sanitizeCssValue } from "@/lib/sanitize";
 
 export default async function RootLayout({
   children,
@@ -64,13 +65,13 @@ export default async function RootLayout({
     console.error("Failed to load brand settings", e);
   }
 
-  // Generate dynamic CSS block
+  // Generate dynamic CSS block with sanitized values
   const brandCss = brandSettings ? `
     :root {
-      --color-primary: ${brandSettings.primaryColor};
-      --color-secondary: ${brandSettings.secondaryColor};
-      --color-accent: ${brandSettings.accentColor};
-      ${brandSettings.fontFamily !== 'Inter' ? `--font-sans: '${brandSettings.fontFamily}', sans-serif;` : ''}
+      --color-primary: ${sanitizeCssValue(brandSettings.primaryColor)};
+      --color-secondary: ${sanitizeCssValue(brandSettings.secondaryColor)};
+      --color-accent: ${sanitizeCssValue(brandSettings.accentColor)};
+      ${brandSettings.fontFamily !== 'Inter' ? `--font-sans: ${sanitizeCssValue(`'${brandSettings.fontFamily}', sans-serif`)};` : ''}
     }
   ` : '';
 

@@ -2,6 +2,7 @@ import { PrismaClient } from '@prisma/client'
 import { PrismaLibSql } from '@prisma/adapter-libsql'
 import { subDays } from 'date-fns'
 import path from 'path'
+import bcrypt from 'bcryptjs'
 
 const dbPath = path.resolve(process.cwd(), 'dev.db')
 const url = `file:${dbPath}`
@@ -19,6 +20,19 @@ async function main() {
     await prisma.lead.deleteMany()
     await prisma.blogPost.deleteMany()
     await prisma.teamMember.deleteMany()
+    await prisma.user.deleteMany()
+
+    // 1.5 Create Admin User with hashed password
+    const hashedPassword = await bcrypt.hash('Krinch2026!', 12)
+    await prisma.user.create({
+        data: {
+            name: 'Admin Krinch',
+            email: 'admin@krinch.com',
+            password: hashedPassword,
+            role: 'ADMIN',
+        }
+    })
+    console.log('✅ Admin user created (admin@krinch.com / Krinch2026!)')
 
     // 2. Leads (Realistic Data)
     const leadsData = [

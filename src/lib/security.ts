@@ -1,13 +1,11 @@
 import { Role } from '@prisma/client';
+import { auth } from '@/lib/auth';
 
 /**
  * Auth Security Module
  * 
- * IMPORTANT: This module currently uses a MOCK session for development.
- * Before going to production, replace with a real auth solution:
- * - NextAuth.js v5 (recommended for Next.js)
- * - iron-session
- * - Custom JWT with cookies
+ * Uses NextAuth.js v5 for session management.
+ * The `auth()` function reads the JWT from the cookie and returns the session.
  */
 
 interface SessionUser {
@@ -16,25 +14,22 @@ interface SessionUser {
     role: Role;
 }
 
-// Mock session for development — NEVER deploy this to production
-const MOCK_SESSION: SessionUser = {
-    id: "cm6daaaaaaaaaaaaaa",
-    email: "admin@krinch.com",
-    role: Role.ADMIN,
-};
-
 /**
  * Get the current authenticated user from the session.
  * Returns null if no session exists.
  */
 export async function getCurrentUser(): Promise<SessionUser | null> {
-    // TODO [PROD]: Replace with real session retrieval
-    // Example with NextAuth: const session = await auth();
-    // Example with iron-session: const session = await getIronSession(cookies(), sessionOptions);
-    if (process.env.NODE_ENV === 'production') {
-        console.warn('[SECURITY] Mock auth is active in production! This is a critical security issue.');
+    const session = await auth();
+
+    if (!session?.user) {
+        return null;
     }
-    return MOCK_SESSION;
+
+    return {
+        id: session.user.id,
+        email: session.user.email!,
+        role: session.user.role,
+    };
 }
 
 export async function requireAdmin(): Promise<SessionUser> {

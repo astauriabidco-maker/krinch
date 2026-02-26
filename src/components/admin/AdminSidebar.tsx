@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
+import { signOut } from 'next-auth/react';
 
 const menuItems = [
     { label: 'Tableau de bord', icon: LayoutDashboard, href: '/admin' },
@@ -31,6 +32,10 @@ const menuItems = [
 
 export function AdminSidebar({ className }: { className?: string }) {
     const pathname = usePathname();
+
+    const handleLogout = () => {
+        signOut({ callbackUrl: '/login' });
+    };
 
     return (
         <div className={cn("flex flex-col h-full bg-[#0A1628] bg-gradient-to-b from-[#0A1628] to-[#0F2A44] text-white w-72 border-r border-[#1e3a5f]", className)}>
@@ -78,10 +83,13 @@ export function AdminSidebar({ className }: { className?: string }) {
             </nav>
 
             <div className="p-6 border-t border-[#1e3a5f]/50">
-                <button className="flex items-center gap-3.5 w-full px-4 py-3 text-red-400 hover:bg-red-500/10 rounded-xl text-sm font-semibold transition-all group relative overflow-hidden">
+                <button
+                    onClick={handleLogout}
+                    className="flex items-center gap-3.5 w-full px-4 py-3 text-red-400 hover:bg-red-500/10 rounded-xl text-sm font-semibold transition-all group relative overflow-hidden"
+                >
                     <div className="absolute inset-0 bg-red-500/0 group-hover:bg-red-500/5 transition-colors z-0 rounded-xl" />
                     <LogOut size={20} className="relative z-10 group-hover:-translate-x-1 transition-transform" />
-                    <span className="relative z-10">Déconnexion secure</span>
+                    <span className="relative z-10">Déconnexion</span>
                 </button>
             </div>
         </div>

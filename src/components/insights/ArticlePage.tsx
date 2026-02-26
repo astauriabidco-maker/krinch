@@ -7,6 +7,9 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Newsletter from "@/components/layout/Newsletter";
 import { Clock, Calendar, ChevronLeft, ArrowRight, User, Share2 } from "lucide-react";
+import { sanitizeHtml } from "@/lib/sanitize";
+import { Locale } from "@/lib/i18n/get-dictionary";
+import { Dictionary } from "@/lib/types";
 
 const FALLBACK_IMAGES: Record<string, string> = {
     ia: "/images/insights/ia-rh.png",
@@ -15,7 +18,21 @@ const FALLBACK_IMAGES: Record<string, string> = {
     hr: "/images/insights/digital.png",
 };
 
-export default function ArticlePage({ article, dict, locale }: { article: any; dict: any; locale: any }) {
+interface ArticleData {
+    slug: string;
+    title: string;
+    excerpt?: string;
+    content: string;
+    category: string;
+    categoryLabel?: string;
+    image?: string;
+    date?: string;
+    readTime?: string;
+    author?: string | null;
+    coverImage?: string;
+}
+
+export default function ArticlePage({ article, dict, locale }: { article: ArticleData; dict: Dictionary; locale: Locale }) {
     const imageUrl = article.image || FALLBACK_IMAGES[article.category] || "/images/insights/digital.png";
 
     const handleShare = () => {
@@ -117,7 +134,7 @@ export default function ArticlePage({ article, dict, locale }: { article: any; d
                             prose-strong:text-primary prose-strong:font-bold
                             prose-a:text-secondary prose-a:underline prose-a:decoration-secondary/30 hover:prose-a:decoration-secondary
                         "
-                        dangerouslySetInnerHTML={{ __html: article.content }}
+                        dangerouslySetInnerHTML={{ __html: sanitizeHtml(article.content) }}
                     />
 
                     {/* Dynamic Conversion CTA */}
