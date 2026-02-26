@@ -5,9 +5,17 @@ import { requireEditor } from '@/lib/security';
 import { revalidatePath } from 'next/cache';
 import { ContactSchema } from '@/lib/schemas';
 import { z } from 'zod';
+import { checkRateLimit, rateLimiters } from '@/lib/rate-limit';
+import { notifyContactMessage } from '@/lib/notifications';
 
 export async function submitContactAction(data: z.infer<typeof ContactSchema>) {
     try {
+        // Rate limit: 5 submissions per 15 minutes
+        const rateCheck = await checkRateLimit(rateLimiters.contact);
+        if (!rateCheck.success) {
+            return { success: false, error: rateCheck.error };
+        }
+
         const validated = ContactSchema.parse(data);
 
         await db.contactMessage.create({
@@ -36,6 +44,15 @@ export async function submitContactAction(data: z.infer<typeof ContactSchema>) {
         }
 
         revalidatePath('/admin');
+
+        // Send email notification (async, non-blocking)
+        notifyContactMessage({
+            name: validated.name,
+            email: validated.email,
+            subject: validated.subject,
+            message: validated.message,
+        }).catch(err => console.error('Failed to notify:', err));
+
         return { success: true };
     } catch (e: unknown) {
         console.error('Contact form error:', e);

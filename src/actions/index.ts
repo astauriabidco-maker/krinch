@@ -6,10 +6,17 @@ import { createPost, updatePost, deletePost, togglePostPublished } from '@/servi
 import { revalidatePath } from 'next/cache';
 import { LeadSchema, BlogPostSchema } from '@/lib/schemas';
 import { z } from 'zod';
+import { checkRateLimit, rateLimiters } from '@/lib/rate-limit';
 
 // --- LEADS ---
 
 export async function submitLeadAction(formData: FormData) {
+    // Rate limit: 10 submissions per 15 minutes
+    const rateCheck = await checkRateLimit(rateLimiters.quiz);
+    if (!rateCheck.success) {
+        return { success: false, error: rateCheck.error };
+    }
+
     const rawData: Record<string, unknown> = {};
     formData.forEach((value, key) => {
         if (key === 'answers' || key === 'score') {

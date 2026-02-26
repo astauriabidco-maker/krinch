@@ -14,7 +14,19 @@ export default auth((req) => {
             loginUrl.searchParams.set('callbackUrl', pathname)
             return NextResponse.redirect(loginUrl)
         }
-        // User is authenticated, allow access
+
+        // Check role: only ADMIN and EDITOR can access admin panel
+        const role = (req.auth.user as { role?: string }).role
+        if (!role || !['ADMIN', 'EDITOR'].includes(role)) {
+            // Redirect unauthorized users to home
+            return NextResponse.redirect(new URL('/fr', req.nextUrl.origin))
+        }
+
+        // Settings page: ADMIN only
+        if (pathname.startsWith('/admin/settings') && role !== 'ADMIN') {
+            return NextResponse.redirect(new URL('/admin', req.nextUrl.origin))
+        }
+
         return NextResponse.next()
     }
 

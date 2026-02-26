@@ -1,13 +1,19 @@
 'use server';
 
 import { db } from '@/lib/db';
-import { revalidatePath } from 'next/cache';
 import { z } from 'zod';
+import { checkRateLimit, rateLimiters } from '@/lib/rate-limit';
 
 const EmailSchema = z.string().email('Email invalide');
 
 export async function subscribeNewsletterAction(email: string) {
     try {
+        // Rate limit: 3 subscriptions per 15 minutes
+        const rateCheck = await checkRateLimit(rateLimiters.newsletter);
+        if (!rateCheck.success) {
+            return { success: false, error: rateCheck.error };
+        }
+
         const validated = EmailSchema.parse(email);
 
         // Check if already subscribed
